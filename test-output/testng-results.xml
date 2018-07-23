@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12206" started-at="2018-07-23T07:24:14Z" finished-at="2018-07-23T07:24:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12206" started-at="2018-07-23T07:24:14Z" finished-at="2018-07-23T07:24:26Z">
+      <class name="tests.LoginTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:tests.LoginTest@6325a3ee]" name="initialize" is-config="true" duration-ms="312" started-at="2018-07-23T12:54:13Z" finished-at="2018-07-23T12:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.LoginTest@6325a3ee]" name="isSkipped" is-config="true" duration-ms="7660" started-at="2018-07-23T12:54:14Z" finished-at="2018-07-23T12:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.LoginTest@6325a3ee]" name="start" is-config="true" duration-ms="77" started-at="2018-07-23T12:54:21Z" finished-at="2018-07-23T12:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="testLogin(java.util.Hashtable)[pri:0, instance:tests.LoginTest@6325a3ee]" name="testLogin" duration-ms="3101" started-at="2018-07-23T12:54:21Z" data-provider="getData" finished-at="2018-07-23T12:54:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=PreetiK, ExpectedResult=Success, Password=Happy@123, Runmode=Y, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.LoginTest@6325a3ee]" name="aftermethod" is-config="true" duration-ms="297" started-at="2018-07-23T12:54:25Z" finished-at="2018-07-23T12:54:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.LoginTest@6325a3ee]" name="start" is-config="true" duration-ms="3" started-at="2018-07-23T12:54:25Z" finished-at="2018-07-23T12:54:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="dologout()[pri:0, instance:tests.LoginTest@6325a3ee]" name="dologout" duration-ms="574" started-at="2018-07-23T12:54:25Z" finished-at="2018-07-23T12:54:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dologout -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.LoginTest@6325a3ee]" name="aftermethod" is-config="true" duration-ms="48" started-at="2018-07-23T12:54:25Z" finished-at="2018-07-23T12:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:tests.LoginTest@6325a3ee]" name="aftertest" is-config="true" duration-ms="428" started-at="2018-07-23T12:54:26Z" finished-at="2018-07-23T12:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

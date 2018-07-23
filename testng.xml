@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1">
+
+<listeners>
+    <listener class-name="listener.TestsListenerAdapter" />
+</listeners>
+
+</test>
+<test name="Login Test">
+    <classes>
+        <class name="tests.LoginTest" ></class>  
+    </classes>
+</test>
+
+
+<test name="EditTimeAddTime">
+    <classes>
+        <class name="EditTime.AddManualTime" ></class>  
+    </classes>
+</test>
+
+<test name="EditTimeEditTime">
+    <classes>
+        <class name="EditTime.EditManualTime" ></class>  
+    </classes>
+</test>
+
+<test name="EditTimeDeleteTime">
+    <classes>
+        <class name="EditTime.DeleteTime" ></class>  
+    </classes>
+</test>
+
+
+</suite>
