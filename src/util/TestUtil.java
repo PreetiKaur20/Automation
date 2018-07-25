@@ -23,13 +23,13 @@ import org.openqa.selenium.WebElement;
 
 
 import org.testng.Assert;
-import org.testng.ITestResult;
+
+
+import BasePage.TestBase;
 
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
-
-import BasePage.TestBase;
 
 
 
@@ -210,26 +210,7 @@ public class TestUtil  extends TestBase {
 		}
 	}
 
-	public static void signout() throws InterruptedException {
-		Thread.sleep(4000);
-		driver.findElement(By.xpath("//*[@id='nav-menu']/ul[2]/li[2]/img"))
-		.click();
-		Thread.sleep(3000);
-		String p1 = "//*[@id='company-list']/li[";
-		String p2 = "]/a";
-		int i = 1;
-		while (isElementPresent_xpath(p1 + i + p2)) {
-			String text = driver.findElement(By.xpath(p1 + i + p2))
-					.getText();
-			System.out.println(text);
-			if (("Sign out").equals(text)) {
-				driver.findElement(By.xpath(p1 + i + p2)).click();
-			}
-
-			i++;
-		}
-
-	}
+	
 	
 	
 	
@@ -283,19 +264,7 @@ for(int i =0;i<=all.size()-1;i++)
 		 extentTest.log(LogStatus.PASS, "Test Case (failTest) Status is passed");
 		 }
 	 
-	// @Aftermethod
-	 public   void getResult(ITestResult result){
-		 if(result.getStatus() == ITestResult.FAILURE){
-		 extentTest.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
-		 extentTest.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
-		 }else if(result.getStatus() == ITestResult.SKIP){
-		 extentTest.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
-		 }
-		 // ending test
-		 //endTest(logger) : It ends the current test and prepares to create HTML report
-		 extentReports.endTest(extentTest);
-		 }
-
+	
 	//@Aftertest 
 	 public  void endReport(){
 		 // writing everything to document

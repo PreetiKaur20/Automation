@@ -17,7 +17,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/PreetiK/Downloads/Testing-master/Testing-master/Jars/log4j-1.2.14.jar"/>
-	<classpathentry kind="lib" path="C:/Users/PreetiK/Downloads/Testing-master/Testing-master/Jars/saxon-8.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/PreetiK/Downloads/Testing-master/Testing-master/Jars/SaxonLiaison.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,32 +1,27 @@
 package BasePage;
 
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
+
+import util.FBConstants;
+import util.Xls_Reader;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-import util.ErrorUtil;
-import util.FBConstants;
-import util.TestUtil;
-import util.Xls_Reader;
 
 public class TestBase {
 
@@ -42,7 +37,7 @@ public class TestBase {
 
 	public static final String LOG_PATH = FBConstants.REPORTS_PATH + "\\WEB\\";
 
-	@BeforeSuite
+@BeforeSuite
 	public void initialize() throws IOException {
 
 		config = new Properties();
@@ -61,30 +56,30 @@ public class TestBase {
 				+ "\\src\\data\\Data.xlsx");
 		System.out.println(config.getProperty("browserType"));
 
-		//openBrowser();
+		// openBrowser();
 	}
 
 	public static void openBrowser() {
 		if ((config.getProperty("browserType")).equals("Firefox")) {
 
-		/*	APPLICATION_LOGS.debug("Starting the driver");
-			ProfilesIni profile = new ProfilesIni();
-			FirefoxProfile pro = profile.getProfile("default");
-			driver = new FirefoxDriver(pro);*/
-            driver = new FirefoxDriver();
+			/*
+			 * APPLICATION_LOGS.debug("Starting the driver"); ProfilesIni
+			 * profile = new ProfilesIni(); FirefoxProfile pro =
+			 * profile.getProfile("default"); driver = new FirefoxDriver(pro);
+			 */
+			driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			System.out.println(OR.getProperty("signinURL"));
-			//driver.get("http://10.1.2.85/aspire");
+			// driver.get("http://10.1.2.85/aspire");
 			driver.get("http://PreetiK:Happy@123@10.1.2.39/aspire/");
-		
-			
+
 		} else {
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\PreetiK\\workspace\\AutomationFinal\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get("http://PreetiK:Happy@123@10.1.2.39/aspire/");
-		
+
 		}
 	}
 
@@ -114,7 +109,7 @@ public class TestBase {
 		Assert.fail(failureMessage);
 	}
 
-	public void waitForPageToLoad() {
+/*	public void waitForPageToLoad() {
 		wait(1);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		String state = (String) js.executeScript("return document.readyState");
@@ -123,7 +118,7 @@ public class TestBase {
 			wait(2);
 			state = (String) js.executeScript("return document.readyState");
 		}
-	}
+	}*/
 
 	public void wait(int timeToWaitInSec) {
 		try {
