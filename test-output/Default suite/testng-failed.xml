@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.LoginTest">
+      <class name="tests.TLConfiguration">
         <methods>
-          <include name="dologout"/>
+          <include name="isSkipped"/>
           <include name="initialize"/>
-          <include name="testLogin"/>
+          <include name="TLCOnfiguration"/>
         </methods>
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.TLConfiguration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
