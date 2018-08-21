@@ -22,7 +22,7 @@ public class FBConstants {
 	public static final String TL_Filter =	"//*[@id='ctl00_CphBody_GrdApproveEntries']/thead/tr/th[6]";
 	public static final String Approved_Button = "//*[@id='ctl00_CphBody_BtnSubmit']";
 	public static final String Reject_Button = "//*[@id='ctl00_CphBody_btnReject']";
-	
+
 	//List
 	public static final String Admin="//*[@id='ctl00_TabbedPanels1']/ul/li[3]";
 	
@@ -52,6 +52,14 @@ public class FBConstants {
 	public static final String BillingError ="//*[@id='ctl00_CphBody_lblBiilingTypeError']";
 	public static final String RevenueError ="//*[@id='ctl00_CphBody_lblRevenueTypeError']";
 	public static final String CancelButton = "//*[@id='ctl00_CphBody_btnCancel']";
+	public static final String StatisHeader="//*[@id='ctl00_CphBody_GrdMonthlyResults']/thead/tr/th[8]";
+	public static final String BalanceHeader="//*[@id='ctl00_CphBody_GrdMonthlyResults']/thead/tr/th[15]";
+	public static final String RemarkHeader="//*[@id='ctl00_CphBody_GrdMonthlyResults']/thead/tr/th[16]";
+	
+	//Daily View Entry
+			public static final String ClientDrop = "//*[@id='ctl00_CphBody_DrdClient']";
+			public static final String Processdrop =	"//*[@id='ctl00_CphBody_DrdProcess']";
+			public static final String EditLink="//*[@id='ctl00_CphBody_GrdMonthlyResults_ctl02_lnkEdit']";
 			
 	
 	//TL Configuration
@@ -67,7 +75,22 @@ public class FBConstants {
 	public static final String TL = "//*[@id='ctl00_CphBody_ddlTeamLead']";
 	public static final String Location = "//*[@id='ctl00_CphBody_ddlLocation']";
 	public static final String Submit_Button ="//*[@id='ctl00_CphBody_BtnSubmit']";
+	public static final String Record = "//*[@id='ctl00_CphBody_grdTLMapping']/tbody/tr[1]/td[4]"; 
+	public static final String VerticalSearch = "//*[@id='ctl00_CphBody_ddlVerticalSearch']";
+	public static final String StatusFilter = "//*[@id='ctl00_CphBody_grdTLMapping']/thead/tr/th[10]";
+	public static final String ClearButton = "//*[@id='ctl00_CphBody_btnCancel']";
+	
+	
+	//OM 
+	public static final String Recieved_OM =	"//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtReceived']";
+	public static final String TLDrop= "//*[@id='ctl00_CphBody_DdlTL']";
 
+	
+	
+	//Reports
+	public static final String Reports= "//*[@id='ctl00_TabbedPanels1']/ul/li[3]";
+	public static final String Production_Report="//*[@id='oReportCell']/table/tbody/tr[1]/td/div/table/tbody/tr[2]/td[3]/table/tbody/tr/td/div";
+	public static final String Show_Report="//*[@id='ctl00_CphBody_btnSubmit']";
 			
 
 	//paths
@@ -76,6 +99,18 @@ public class FBConstants {
 	public static final String TESTDATA_SHEET = "TestData";
 	public static final Object RUNMODE_COL = "Runmode";
 	public static final String TESTCASES_SHEET = "TestCases";
+
+	public static final String ReportTl = "//*[@id='oReportCell']/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[2]/td[3]/table/tbody/tr[3]/td[5]/div";
+
+
+
+
+
+
+
+
+
+	
 
 	
 

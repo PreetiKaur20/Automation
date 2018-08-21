@@ -22,6 +22,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
 import util.FBConstants;
@@ -95,10 +96,18 @@ public class TestBase {
 
 		}
 	}
+	
+	public static void waiton(){
+		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+	}
+	public static void waitof(){
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
 
 	public static WebElement getObject(String xpathKey) throws IOException {
 
 		try {
+			waitof();
 			return driver.findElement(By.xpath(OR.getProperty(xpathKey)));
 		} catch (Throwable t) {
 
@@ -107,8 +116,9 @@ public class TestBase {
 	}
 
 	public static boolean isElementPresent_xpath(String objectXpath) {
-
+		waitof();
 		int count = driver.findElements(By.xpath(objectXpath)).size();
+		waiton();
 		if (count == 0)
 			return false;
 		else
@@ -139,16 +149,26 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
-
-	public void implicitwait(int time, String id) {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
-	}
-
-	public void WaitFor(WebDriver driver, By by) {
-		WebDriverWait wait1 = new WebDriverWait(driver,1000);
+	
+	//loading for wait
+public void loadwait(int time,By by){
+	WebDriverWait wait = new WebDriverWait(driver, time);
+	wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+}
+	public void WaitFor(int time, By by) {
+		WebDriverWait wait1 = new WebDriverWait(driver,time);
 		wait1.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
 	}
-
+	
+	
+	public void waitAlert(int time){
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.alertIsPresent());
+	}
+/*	@AfterTest
+	public void aftertest() {
+		System.out.println("After Test");
+		driver.quit();
+	}*/
 	
 }
