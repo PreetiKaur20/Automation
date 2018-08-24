@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.RejectRecords">
+      <class name="tests.TLConfiguration">
         <methods>
-          <include name="aftermethod"/>
-          <include name="start"/>
-          <include name="VerifiedEditPendingData" invocation-numbers="0"/>
+          <include name="TLConfiguration" invocation-numbers="0"/>
           <include name="isSkipped"/>
+          <include name="start"/>
+          <include name="aftermethod"/>
+          <include name="quitBrowser"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- tests.RejectRecords -->
+      </class> <!-- tests.TLConfiguration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

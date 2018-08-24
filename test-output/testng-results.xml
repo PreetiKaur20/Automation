@@ -2,39 +2,43 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34467" started-at="2018-08-21T06:05:09Z" finished-at="2018-08-21T06:05:44Z">
+  <suite name="Default suite" duration-ms="67303" started-at="2018-08-24T08:49:33Z" finished-at="2018-08-24T08:50:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34467" started-at="2018-08-21T06:05:09Z" finished-at="2018-08-21T06:05:44Z">
-      <class name="tests.VerifyTLConnfigEdit">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:tests.VerifyTLConnfigEdit@7fac631b]" name="initialize" is-config="true" duration-ms="344" started-at="2018-08-21T11:35:09Z" finished-at="2018-08-21T11:35:09Z">
+    <test name="Default test" duration-ms="67303" started-at="2018-08-24T08:49:33Z" finished-at="2018-08-24T08:50:40Z">
+      <class name="tests.TLConfiguration">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:tests.TLConfiguration@5b87ed94]" name="initialize" is-config="true" duration-ms="391" started-at="2018-08-24T14:19:32Z" finished-at="2018-08-24T14:19:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifyTLConnfigEdit@7fac631b]" name="isSkipped" is-config="true" duration-ms="5966" started-at="2018-08-21T11:35:09Z" finished-at="2018-08-21T11:35:15Z">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.TLConfiguration@5b87ed94]" name="isSkipped" is-config="true" duration-ms="9936" started-at="2018-08-24T14:19:33Z" finished-at="2018-08-24T14:19:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkipped -->
-        <test-method status="PASS" signature="start()[pri:0, instance:tests.VerifyTLConnfigEdit@7fac631b]" name="start" is-config="true" duration-ms="86" started-at="2018-08-21T11:35:15Z" finished-at="2018-08-21T11:35:15Z">
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.TLConfiguration@5b87ed94]" name="start" is-config="true" duration-ms="71" started-at="2018-08-24T14:19:42Z" finished-at="2018-08-24T14:19:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="TLCOnfiguration(java.util.Hashtable)[pri:0, instance:tests.VerifyTLConnfigEdit@7fac631b]" name="TLCOnfiguration" duration-ms="28244" started-at="2018-08-21T11:35:15Z" data-provider="getData" finished-at="2018-08-21T11:35:43Z">
+        <test-method status="PASS" signature="TLConfiguration(java.util.Hashtable)[pri:0, instance:tests.TLConfiguration@5b87ed94]" name="TLConfiguration" duration-ms="57115" started-at="2018-08-24T14:19:43Z" data-provider="getData" finished-at="2018-08-24T14:20:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Vertical=RCM, ChangeTL=DEVI N, OM=ARJUN B, Client=NextGen RCM, SDH=BASKARAN A, Runmode=Y, TL=BALAJI R, Project=NextGen RCM, Location=BLR II, Admin=VijayalaH, TL1=RagunathA, SM=MURUGESAN S, Process=BAY MEDICAL - PP}]]>
+                <![CDATA[{Vertical=RCM, ChangeTL=DEVI N, OM=ARJUN B, LoginTL=BalajiR, Client=NextGen RCM, SDH=BASKARAN A, Runmode=Y, TL=BALAJI R, Project=NextGen RCM, Location=BLR II, Admin=VijayalaH, TL1=RagunathA, SM=MURUGESAN S, Process=BAY MEDICAL - PP}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TLCOnfiguration -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.VerifyTLConnfigEdit@7fac631b]" name="aftermethod" is-config="true" duration-ms="162" started-at="2018-08-21T11:35:43Z" finished-at="2018-08-21T11:35:44Z">
+        </test-method> <!-- TLConfiguration -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.TLConfiguration@5b87ed94]" name="aftermethod" is-config="true" duration-ms="163" started-at="2018-08-24T14:20:40Z" finished-at="2018-08-24T14:20:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-      </class> <!-- tests.VerifyTLConnfigEdit -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.TLConfiguration@5b87ed94]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2018-08-24T14:20:40Z" finished-at="2018-08-24T14:20:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.TLConfiguration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

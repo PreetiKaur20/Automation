@@ -1,147 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Login">
-    <classes>
-      <class name="tests.AccountConfigScreen"/>
-    </classes>
-  </test> <!-- Test -->
- 
-   <test name="Test">
-    <classes>
-      <class name="tests.AccountConfiguration"/>
-    </classes>
-  </test> <!-- Test -->
+
   
-    <test name="Test">
-    <classes>
-      <class name="tests.AdminConfigCancel"/>
-    </classes>
-  </test> <!-- Test -->
   
-     <test name="Test">
+  
+  
+  <test name="CurrentDayRecord">
     <classes>
       <class name="tests.CurrentDayRecord"/>
     </classes>
   </test> <!-- Test -->
-  
-      <test name="Test">
-    <classes>
-      <class name="tests.CurrentDayRecord"/>
-    </classes>
-  </test> <!-- Test -->
-  
-   <test name="Test">
-    <classes>
-      <class name="tests.dailyEntryViewEditLink"/>
-    </classes>
-  </test> <!-- Test -->
-  
-     <test name="Test">
-    <classes>
-      <class name="tests.InactiveTLConfig/>
-    </classes>
-  </test> <!-- Test -->
-  
-    <test name="Test">
-    <classes>
-      <class name="tests.EditDataPendingStatus"/>
-    </classes>
-  </test> <!-- Test -->
-  
-      <test name="Test">
-    <classes>
-      <class name="tests.EditDataPendingStatus"/>
-    </classes>
-  </test> <!-- Test -->
-  
-        <test name="Test">
-    <classes>
-      <class name="tests.OperationManager"/>
-    </classes>
-  </test> <!-- Test -->
-  
-         <test name="Test">
-    <classes>
-      <class name="tests.OperationManager"/>
-    </classes>
-  </test> <!-- Test -->
-  
-      <test name="Test">
-    <classes>
-      <class name="tests.OperationManagerPending"/>
-    </classes>
-  </test> <!-- Test -->
+
    
-   
-     <test name="Test">
+
+
+     <test name="VerifyRemarkBalnceSatuseField">
+    <classes>
+      <class name="tests.VerifyRemarkBalnceSatuseField"/>
+    </classes>
+  </test> <!-- Test -->
+
+   <test name="TLConfigurationScreen">
+    <classes>
+      <class name="tests.TLConfigurationScreen"/>
+    </classes>
+  </test> <!-- Test -->
+
+  
+     <test name="PendingStatusVerified">
     <classes>
       <class name="tests.PendingStatusVerified"/>
     </classes>
   </test> <!-- Test -->
   
-   <test name="Test">
-    <classes>
-      <class name="tests.RejectRecords"/>
-    </classes>
-  </test> <!-- Test -->
-   
-   <test name="Test">
-    <classes>
-      <class name="tests.RejectRecords"/>
-    </classes>
-  </test> <!-- Test -->
-   
-   
-      <test name="Test">
-    <classes>
-      <class name="tests.TLConfiguration"/>
-    </classes>
-  </test> <!-- Test -->
-  
-      <test name="Test">
-    <classes>
-      <class name="tests.TLConfigurationScreen"/>
-    </classes>
-  </test> <!-- Test -->
-   
-   
-         <test name="Test">
+ <test name="VerifiedUpdatedRecordsEdit">
     <classes>
       <class name="tests.VerifiedUpdatedRecordsEdit"/>
     </classes>
   </test> <!-- Test -->
-   
   
-       <test name="Test">
+   <test name="RejectRecords">
     <classes>
-      <class name="tests.VerifyRemarkBalnceSatuseField"/>
+      <class name="tests.RejectRecords"/>
     </classes>
   </test> <!-- Test -->
+    
    
-       <test name="Test">
+  
+   
+  
+  
+
+  
+     <test name="EditDataPendingStatus">
+    <classes>
+      <class name="tests.EditDataPendingStatus"/>
+    </classes>
+  </test> <!-- Test -->
+
+  
+  <test name="dailyEntryViewEditLink">
+    <classes>
+      <class name="tests.dailyEntryViewEditLink"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="DailyEntryViewProcessFilter">
+    <classes>
+      <class name="tests.DailyEntryViewProcessFilter"/>
+    </classes>
+  </test> <!-- Test -->
+      
+      <test name="DateSelectionVerification">
+    <classes>
+      <class name="tests.DateSelectionVerification"/>
+    </classes>
+  </test> <!-- Test -->
+  
+      <test name="VerifyReportsTL">
     <classes>
       <class name="tests.VerifyReportsTL"/>
     </classes>
   </test> <!-- Test -->
   
-         <test name="Test">
+  
+     <test name="OperationManager">
     <classes>
-      <class name="tests.VerifyTLConfigClearBtn"/>
+      <class name="tests.OperationManager"/>
+    </classes>
+    </test> <!-- Test -->
+   
+     <test name="OperationManagerPending">
+    <classes>
+      <class name="tests.OperationManagerPending"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+    
+     
+
+   
+    
+
+  
+
+    
+ 
+
+
+  
+
+     <test name="PleaseSelectAccBilRev">
+    <classes>
+      <class name="tests.PleaseSelectAccBilRev"/>
     </classes>
   </test> <!-- Test -->
    
-        <test name="Test">
+  
+       <test name="AccountConfigScreen">
+    <classes>
+      <class name="tests.AccountConfigScreen"/>
+    </classes>
+  </test> <!-- Test -->
+  
+     <test name="AccountConfiguration">
+    <classes>
+      <class name="tests.AccountConfiguration"/>
+    </classes>
+  </test> <!-- Test -->
+     
+     <test name="AdminConfigCancel">
+    <classes>
+      <class name="tests.AdminConfigCancel"/>
+    </classes>
+  </test> <!-- Test -->
+    
+    
+    
+     <test name="VerifyTLConfigDisable">
     <classes>
       <class name="tests.VerifyTLConfigDisable"/>
     </classes>
   </test> <!-- Test -->
    
-      <test name="Test">
+  
+
+     <test name="VerifyTLConfigClearBtn">
+    <classes>
+      <class name="tests.VerifyTLConfigClearBtn"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="VerifyTLConnfigEdit">
     <classes>
       <class name="tests.VerifyTLConnfigEdit"/>
     </classes>
   </test> <!-- Test -->
- 
+       
   
+
+
 </suite> <!-- Suite -->

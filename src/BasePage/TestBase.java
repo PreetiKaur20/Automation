@@ -79,8 +79,9 @@ public class TestBase {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
 			driver.get("http://PreetiK:Happy@123@10.1.2.85/OMH/");
+			
 			// driver.get("http://10.1.2.85/aspire");
 
 		} else {
@@ -95,6 +96,13 @@ public class TestBase {
 			driver.get(FBConstants.Approval);
 
 		}
+	}
+	
+	@AfterTest
+	public void quitBrowser()
+	{
+	
+		//driver.quit();
 	}
 	
 	public static void waiton(){
