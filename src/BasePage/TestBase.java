@@ -13,6 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -45,6 +46,7 @@ public class TestBase {
 	public static ExtentReports extentReports;
 	public static ExtentTest extentTest;
 	public static final String LOG_PATH = FBConstants.REPORTS_PATH + "\\WEB\\";
+	
 
 	@BeforeSuite
 	public void initialize() throws IOException {
@@ -78,9 +80,9 @@ public class TestBase {
 			 */
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
-			driver.get("http://PreetiK:Happy@123@10.1.2.85/OMH/");
+			driver.get(FBConstants.LoginURL);
 			
 			// driver.get("http://10.1.2.85/aspire");
 
@@ -91,7 +93,7 @@ public class TestBase {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-			driver.get("http://PreetiK:Happy@123@10.1.2.85/OMH/");
+			driver.get(FBConstants.LoginURL);
 			// navigate to Approval
 			driver.get(FBConstants.Approval);
 
@@ -102,7 +104,8 @@ public class TestBase {
 	public void quitBrowser()
 	{
 	
-		//driver.quit();
+	driver.quit();
+	wait(2);
 	}
 	
 	public static void waiton(){
@@ -173,10 +176,27 @@ public void loadwait(int time,By by){
 		WebDriverWait wait = new WebDriverWait(driver, time);
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
+	
+	
+	public boolean isAlertPresent(){
+	    boolean foundAlert = false;
+	    WebDriverWait wait = new WebDriverWait(driver, 20 /*timeout in seconds*/);
+	    try {
+	        wait.until(ExpectedConditions.alertIsPresent());
+	        foundAlert = true;
+	    } catch (TimeoutException eTO) {
+	        foundAlert = false;
+	    }
+	    return foundAlert;
+	}
+	
 /*	@AfterTest
 	public void aftertest() {
 		System.out.println("After Test");
 		driver.quit();
 	}*/
+	
+	
+	
 	
 }

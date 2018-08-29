@@ -2,45 +2,55 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-  
-  
-  
-  
-  <test name="CurrentDayRecord">
+
+ <test name="TLLogin">
     <classes>
-      <class name="tests.CurrentDayRecord"/>
+      <class name="tests.TLLogin"/>
+    </classes>
+  </test> <!-- Test -->
+  
+
+    <test name="PendingStatusVerified">
+    <classes>
+      <class name="tests.PendingStatusVerified"/>
     </classes>
   </test> <!-- Test -->
 
+
+
+
+
    
 
-
-     <test name="VerifyRemarkBalnceSatuseField">
+  
+    <test name="VerifyRemarkBalnceSatuseField">
     <classes>
       <class name="tests.VerifyRemarkBalnceSatuseField"/>
     </classes>
   </test> <!-- Test -->
 
-   <test name="TLConfigurationScreen">
+   <test name="EditDataPendingStatus">
     <classes>
-      <class name="tests.TLConfigurationScreen"/>
+      <class name="tests.EditDataPendingStatus"/>
     </classes>
   </test> <!-- Test -->
 
+ 
   
-     <test name="PendingStatusVerified">
+  
+      <test name="VerifyReportsTL">
     <classes>
-      <class name="tests.PendingStatusVerified"/>
+      <class name="tests.VerifyReportsTL"/>
     </classes>
   </test> <!-- Test -->
   
- <test name="VerifiedUpdatedRecordsEdit">
+      <test name="CurrentDayRecord">
     <classes>
-      <class name="tests.VerifiedUpdatedRecordsEdit"/>
+      <class name="tests.CurrentDayRecord"/>
     </classes>
   </test> <!-- Test -->
-  
-   <test name="RejectRecords">
+
+  <test name="RejectRecords">
     <classes>
       <class name="tests.RejectRecords"/>
     </classes>
@@ -48,19 +58,8 @@
     
    
   
-   
-  
-  
 
-  
-     <test name="EditDataPendingStatus">
-    <classes>
-      <class name="tests.EditDataPendingStatus"/>
-    </classes>
-  </test> <!-- Test -->
-
-  
-  <test name="dailyEntryViewEditLink">
+ <test name="dailyEntryViewEditLink">
     <classes>
       <class name="tests.dailyEntryViewEditLink"/>
     </classes>
@@ -77,89 +76,38 @@
       <class name="tests.DateSelectionVerification"/>
     </classes>
   </test> <!-- Test -->
-  
-      <test name="VerifyReportsTL">
+     <test name="VerifiedUpdatedRecordsEdit">
     <classes>
-      <class name="tests.VerifyReportsTL"/>
+      <class name="tests.VerifiedUpdatedRecordsEdit"/>
     </classes>
   </test> <!-- Test -->
   
   
-     <test name="OperationManager">
+   
+
+
+     
+     
+      <test name="OperationManager">
     <classes>
       <class name="tests.OperationManager"/>
     </classes>
     </test> <!-- Test -->
+    
+          <test name="OMDailyViewEntry">
+    <classes>
+      <class name="tests.OMDailyViewEntry"/>
+    </classes>
+    </test> <!-- Test -->
+   
    
      <test name="OperationManagerPending">
     <classes>
       <class name="tests.OperationManagerPending"/>
     </classes>
   </test> <!-- Test -->
-
-
     
-     
-
-   
-    
-
   
-
-    
- 
-
-
-  
-
-     <test name="PleaseSelectAccBilRev">
-    <classes>
-      <class name="tests.PleaseSelectAccBilRev"/>
-    </classes>
-  </test> <!-- Test -->
    
   
-       <test name="AccountConfigScreen">
-    <classes>
-      <class name="tests.AccountConfigScreen"/>
-    </classes>
-  </test> <!-- Test -->
-  
-     <test name="AccountConfiguration">
-    <classes>
-      <class name="tests.AccountConfiguration"/>
-    </classes>
-  </test> <!-- Test -->
-     
-     <test name="AdminConfigCancel">
-    <classes>
-      <class name="tests.AdminConfigCancel"/>
-    </classes>
-  </test> <!-- Test -->
-    
-    
-    
-     <test name="VerifyTLConfigDisable">
-    <classes>
-      <class name="tests.VerifyTLConfigDisable"/>
-    </classes>
-  </test> <!-- Test -->
-   
-  
-
-     <test name="VerifyTLConfigClearBtn">
-    <classes>
-      <class name="tests.VerifyTLConfigClearBtn"/>
-    </classes>
-  </test> <!-- Test -->
-  
-    <test name="VerifyTLConnfigEdit">
-    <classes>
-      <class name="tests.VerifyTLConnfigEdit"/>
-    </classes>
-  </test> <!-- Test -->
-       
-  
-
-
 </suite> <!-- Suite -->

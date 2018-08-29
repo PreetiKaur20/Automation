@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.TLConfiguration">
+      <class name="tests.AccountConfigBillingType">
         <methods>
-          <include name="TLConfiguration" invocation-numbers="0"/>
           <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="AccountConfigScreen" invocation-numbers="0"/>
           <include name="start"/>
           <include name="aftermethod"/>
-          <include name="quitBrowser"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- tests.TLConfiguration -->
+      </class> <!-- tests.AccountConfigBillingType -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

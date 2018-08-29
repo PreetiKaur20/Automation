@@ -5,6 +5,10 @@ package util;
 
 public class FBConstants {
 	public static final String Browser = "Firefox";
+	public static final String TLUser = "Welcome RAGUNATH A";
+	public static final String AdminUser = "Welcome Vijayalakshmi Hanumantha";
+	public static final String OMUser = "Welcome PRABAHARAN C K";
+	public static final String SDHUser = "Welcome PURNIMA S";
 	
 	// locators
 	public static final String Trasction = "//*[@id='ctl00_TabbedPanels1']/ul/li[2]";
@@ -25,7 +29,9 @@ public class FBConstants {
 
 	//List
 	public static final String Admin="//*[@id='ctl00_TabbedPanels1']/ul/li[3]";
-	
+	//URLS
+	public static final String LoginURL="http://PreetiK:Happy@321@10.1.2.85/OMH/";
+	public static final String ApplicationURL=	"http://PreetiK:Happy@321@10.1.2.85/OMH/";
 
 	// URLs-uat
 	public static final String URL_APP = "http://10.1.2.85/aspire";
@@ -33,7 +39,7 @@ public class FBConstants {
 	public static final String Data_Entry = "http://10.1.2.85/OMH/Transactions/DailyEntry.aspx";
 	public static final String Data_View_Entry=	"http://10.1.2.85/OMH/Transactions/ViewDailyEntries.aspx";
 	public static final String Approval=	"http://10.1.2.85/OMH/Transactions/Approvals.aspx"; 
-	public static final String ApplicationURL=	"http://PreetiK:Happy@123@10.1.2.85/OMH/";
+	
 	public static final String unitRate ="//*[@id='ctl00_CphBody_txtUnitRate']";
 	public static final String Submit ="//*[@id='ctl00_CphBody_BtnSubmit']";
 	public static final String Records=	"//*[@id='ctl00_CphBody_GrdUnitRateNotNull_length']/label/select";
@@ -101,6 +107,8 @@ public class FBConstants {
 	public static final String TESTCASES_SHEET = "TestCases";
 
 	public static final String ReportTl = "//*[@id='oReportCell']/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[2]/td[3]/table/tbody/tr[3]/td[5]/div";
+
+	public static final String Username = "//*[@id='ctl00_lblUserName']";
 
 
 
