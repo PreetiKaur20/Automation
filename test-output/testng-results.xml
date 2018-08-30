@@ -1,25 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14961" started-at="2018-08-29T11:34:34Z" finished-at="2018-08-29T11:34:49Z">
+  <suite name="Suite" duration-ms="798589" started-at="2018-08-30T03:26:46Z" finished-at="2018-08-30T03:40:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14961" started-at="2018-08-29T11:34:34Z" finished-at="2018-08-29T11:34:49Z">
-      <class name="tests.VerifyReportsTL">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="initialize" is-config="true" duration-ms="418" started-at="2018-08-29T17:04:34Z" finished-at="2018-08-29T17:04:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="isSkipped" is-config="true" duration-ms="6258" started-at="2018-08-29T17:04:34Z" finished-at="2018-08-29T17:04:40Z">
+    <test name="TLLogin" duration-ms="17556" started-at="2018-08-30T03:26:46Z" finished-at="2018-08-30T03:27:04Z">
+      <class name="tests.TLLogin">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.TLLogin@5b87ed94]" name="isSkipped" is-config="true" duration-ms="9049" started-at="2018-08-30T08:56:46Z" finished-at="2018-08-30T08:56:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkipped -->
-        <test-method status="PASS" signature="start()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="start" is-config="true" duration-ms="88" started-at="2018-08-29T17:04:40Z" finished-at="2018-08-29T17:04:40Z">
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.TLLogin@5b87ed94]" name="start" is-config="true" duration-ms="81" started-at="2018-08-30T08:56:55Z" finished-at="2018-08-30T08:56:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="VerifyReportsTL(java.util.Hashtable)[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="VerifyReportsTL" duration-ms="5739" started-at="2018-08-29T17:04:40Z" data-provider="getData" finished-at="2018-08-29T17:04:46Z">
+        <test-method status="PASS" signature="CurrentDayRecord(java.util.Hashtable)[pri:0, instance:tests.TLLogin@5b87ed94]" name="CurrentDayRecord" duration-ms="5628" started-at="2018-08-30T08:56:55Z" data-provider="getData" finished-at="2018-08-30T08:57:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, SDH=PurnimaS, OMUser=Welcome PRABAHARAN C K, Runmode=Y, SDHUser=Welcome PURNIMA S, TL=RagunathA, AdminUser=Welcome Vijayalakshmi Hanumantha, received=13.0, Admin=VijayalaH, TLUser=Welcome RAGUNATH A}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CurrentDayRecord -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.TLLogin@5b87ed94]" name="aftermethod" is-config="true" duration-ms="188" started-at="2018-08-30T08:57:01Z" finished-at="2018-08-30T08:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.TLLogin@5b87ed94]" name="quitBrowser" is-config="true" duration-ms="2592" started-at="2018-08-30T08:57:01Z" finished-at="2018-08-30T08:57:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.TLLogin -->
+    </test> <!-- TLLogin -->
+    <test name="PendingStatusVerified" duration-ms="68613" started-at="2018-08-30T03:27:04Z" finished-at="2018-08-30T03:28:12Z">
+      <class name="tests.PendingStatusVerified">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.PendingStatusVerified@7c29daf3]" name="isSkipped" is-config="true" duration-ms="7934" started-at="2018-08-30T08:57:04Z" finished-at="2018-08-30T08:57:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.PendingStatusVerified@7c29daf3]" name="start" is-config="true" duration-ms="10" started-at="2018-08-30T08:57:11Z" finished-at="2018-08-30T08:57:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="PendingStatusVerified(java.util.Hashtable)[pri:0, instance:tests.PendingStatusVerified@7c29daf3]" name="PendingStatusVerified" duration-ms="58175" started-at="2018-08-30T08:57:11Z" data-provider="getData" finished-at="2018-08-30T08:58:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{balannce=, SDH=PurnimaS, Runmode=Y, TL=RagunathA, Date=3, received=2.0, discard=50.0, coded=0.0, Date_RowNo=1.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PendingStatusVerified -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.PendingStatusVerified@7c29daf3]" name="aftermethod" is-config="true" duration-ms="48" started-at="2018-08-30T08:58:10Z" finished-at="2018-08-30T08:58:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.PendingStatusVerified@7c29daf3]" name="quitBrowser" is-config="true" duration-ms="2444" started-at="2018-08-30T08:58:10Z" finished-at="2018-08-30T08:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.PendingStatusVerified -->
+    </test> <!-- PendingStatusVerified -->
+    <test name="VerifyRemarkBalnceSatuseField" duration-ms="21185" started-at="2018-08-30T03:28:12Z" finished-at="2018-08-30T03:28:33Z">
+      <class name="tests.VerifyRemarkBalnceSatuseField">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifyRemarkBalnceSatuseField@2a17b7b6]" name="isSkipped" is-config="true" duration-ms="9828" started-at="2018-08-30T08:58:12Z" finished-at="2018-08-30T08:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.VerifyRemarkBalnceSatuseField@2a17b7b6]" name="start" is-config="true" duration-ms="4" started-at="2018-08-30T08:58:22Z" finished-at="2018-08-30T08:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="VerifyRemarkBalnceSatuseField(java.util.Hashtable)[pri:0, instance:tests.VerifyRemarkBalnceSatuseField@2a17b7b6]" name="VerifyRemarkBalnceSatuseField" duration-ms="8821" started-at="2018-08-30T08:58:22Z" data-provider="getData" finished-at="2018-08-30T08:58:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{balannce=, SDH=PurnimaS, Runmode=Y, TL=RagunathA, Date=6, received=13.0, discard=50.0, coded=100.0, Date_RowNo=1.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRemarkBalnceSatuseField -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.VerifyRemarkBalnceSatuseField@2a17b7b6]" name="aftermethod" is-config="true" duration-ms="28" started-at="2018-08-30T08:58:31Z" finished-at="2018-08-30T08:58:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.VerifyRemarkBalnceSatuseField@2a17b7b6]" name="quitBrowser" is-config="true" duration-ms="2500" started-at="2018-08-30T08:58:31Z" finished-at="2018-08-30T08:58:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.VerifyRemarkBalnceSatuseField -->
+    </test> <!-- VerifyRemarkBalnceSatuseField -->
+    <test name="EditDataPendingStatus" duration-ms="85446" started-at="2018-08-30T03:28:33Z" finished-at="2018-08-30T03:29:59Z">
+      <class name="tests.EditDataPendingStatus">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.EditDataPendingStatus@131276c2]" name="isSkipped" is-config="true" duration-ms="5606" started-at="2018-08-30T08:58:33Z" finished-at="2018-08-30T08:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.EditDataPendingStatus@131276c2]" name="start" is-config="true" duration-ms="4" started-at="2018-08-30T08:58:39Z" finished-at="2018-08-30T08:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="EditDataPendingStatus(java.util.Hashtable)[pri:0, instance:tests.EditDataPendingStatus@131276c2]" name="EditDataPendingStatus" duration-ms="77178" started-at="2018-08-30T08:58:39Z" data-provider="getData" finished-at="2018-08-30T08:59:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{balannce=, SDH=PurnimaS, Runmode=Y, TL=RagunathA, Date=6, received=13.0, discard=50.0, coded=100.0, Date_RowNo=1.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditDataPendingStatus -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.EditDataPendingStatus@131276c2]" name="aftermethod" is-config="true" duration-ms="34" started-at="2018-08-30T08:59:56Z" finished-at="2018-08-30T08:59:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.EditDataPendingStatus@131276c2]" name="quitBrowser" is-config="true" duration-ms="2623" started-at="2018-08-30T08:59:56Z" finished-at="2018-08-30T08:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.EditDataPendingStatus -->
+    </test> <!-- EditDataPendingStatus -->
+    <test name="VerifyReportsTL" duration-ms="19889" started-at="2018-08-30T03:29:59Z" finished-at="2018-08-30T03:30:19Z">
+      <class name="tests.VerifyReportsTL">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifyReportsTL@23faf8f2]" name="isSkipped" is-config="true" duration-ms="8439" started-at="2018-08-30T08:59:59Z" finished-at="2018-08-30T09:00:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.VerifyReportsTL@23faf8f2]" name="start" is-config="true" duration-ms="4" started-at="2018-08-30T09:00:07Z" finished-at="2018-08-30T09:00:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="VerifyReportsTL(java.util.Hashtable)[pri:0, instance:tests.VerifyReportsTL@23faf8f2]" name="VerifyReportsTL" duration-ms="8932" started-at="2018-08-30T09:00:07Z" data-provider="getData" finished-at="2018-08-30T09:00:16Z">
           <params>
             <param index="0">
               <value>
@@ -30,15 +150,298 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReportsTL -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="aftermethod" is-config="true" duration-ms="198" started-at="2018-08-29T17:04:46Z" finished-at="2018-08-29T17:04:46Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.VerifyReportsTL@23faf8f2]" name="aftermethod" is-config="true" duration-ms="28" started-at="2018-08-30T09:00:16Z" finished-at="2018-08-30T09:00:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="quitBrowser" is-config="true" duration-ms="2666" started-at="2018-08-29T17:04:46Z" finished-at="2018-08-29T17:04:49Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.VerifyReportsTL@23faf8f2]" name="quitBrowser" is-config="true" duration-ms="2483" started-at="2018-08-30T09:00:16Z" finished-at="2018-08-30T09:00:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- tests.VerifyReportsTL -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- VerifyReportsTL -->
+    <test name="CurrentDayRecord" duration-ms="60954" started-at="2018-08-30T03:30:19Z" finished-at="2018-08-30T03:31:20Z">
+      <class name="tests.CurrentDayRecord">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.CurrentDayRecord@56aac163]" name="isSkipped" is-config="true" duration-ms="5039" started-at="2018-08-30T09:00:19Z" finished-at="2018-08-30T09:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.CurrentDayRecord@56aac163]" name="start" is-config="true" duration-ms="3" started-at="2018-08-30T09:00:24Z" finished-at="2018-08-30T09:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="CurrentDayRecord(java.util.Hashtable)[pri:0, instance:tests.CurrentDayRecord@56aac163]" name="CurrentDayRecord" duration-ms="53290" started-at="2018-08-30T09:00:24Z" data-provider="getData" finished-at="2018-08-30T09:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, SDH=PurnimaS, OMUser=Welcome PRABAHARAN C K, Runmode=Y, SDHUser=Welcome PURNIMA S, TL=RagunathA, AdminUser=Welcome Vijayalakshmi Hanumantha, received=13.0, Admin=VijayalaH, TLUser=Welcome RAGUNATH A}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CurrentDayRecord -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.CurrentDayRecord@56aac163]" name="aftermethod" is-config="true" duration-ms="29" started-at="2018-08-30T09:01:17Z" finished-at="2018-08-30T09:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.CurrentDayRecord@56aac163]" name="quitBrowser" is-config="true" duration-ms="2591" started-at="2018-08-30T09:01:17Z" finished-at="2018-08-30T09:01:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.CurrentDayRecord -->
+    </test> <!-- CurrentDayRecord -->
+    <test name="RejectRecords" duration-ms="111679" started-at="2018-08-30T03:31:20Z" finished-at="2018-08-30T03:33:11Z">
+      <class name="tests.RejectRecords">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.RejectRecords@167fdd33]" name="isSkipped" is-config="true" duration-ms="7341" started-at="2018-08-30T09:01:20Z" finished-at="2018-08-30T09:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.RejectRecords@167fdd33]" name="start" is-config="true" duration-ms="5" started-at="2018-08-30T09:01:27Z" finished-at="2018-08-30T09:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="RejectRecords(java.util.Hashtable)[pri:0, instance:tests.RejectRecords@167fdd33]" name="RejectRecords" duration-ms="101622" started-at="2018-08-30T09:01:27Z" data-provider="getData" finished-at="2018-08-30T09:03:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{balannce=, SDH=PurnimaS, Runmode=Y, TL=RagunathA, Date=6, received=13.0, discard=50.0, coded=100.0, Date_RowNo=1.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RejectRecords -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.RejectRecords@167fdd33]" name="aftermethod" is-config="true" duration-ms="42" started-at="2018-08-30T09:03:09Z" finished-at="2018-08-30T09:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.RejectRecords@167fdd33]" name="quitBrowser" is-config="true" duration-ms="2666" started-at="2018-08-30T09:03:09Z" finished-at="2018-08-30T09:03:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.RejectRecords -->
+    </test> <!-- RejectRecords -->
+    <test name="dailyEntryViewEditLink" duration-ms="45322" started-at="2018-08-30T03:33:11Z" finished-at="2018-08-30T03:33:57Z">
+      <class name="tests.dailyEntryViewEditLink">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.dailyEntryViewEditLink@2833cc44]" name="isSkipped" is-config="true" duration-ms="8459" started-at="2018-08-30T09:03:11Z" finished-at="2018-08-30T09:03:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.dailyEntryViewEditLink@2833cc44]" name="start" is-config="true" duration-ms="4" started-at="2018-08-30T09:03:20Z" finished-at="2018-08-30T09:03:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="dailyEntryViewEditLink(java.util.Hashtable)[pri:0, instance:tests.dailyEntryViewEditLink@2833cc44]" name="dailyEntryViewEditLink" duration-ms="34094" started-at="2018-08-30T09:03:20Z" data-provider="getData" finished-at="2018-08-30T09:03:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{balannce=, SDH=PurnimaS, Runmode=Y, TL=RagunathA, Date=6, received=13.0, discard=50.0, coded=100.0, Date_RowNo=1.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dailyEntryViewEditLink -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.dailyEntryViewEditLink@2833cc44]" name="aftermethod" is-config="true" duration-ms="33" started-at="2018-08-30T09:03:54Z" finished-at="2018-08-30T09:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.dailyEntryViewEditLink@2833cc44]" name="quitBrowser" is-config="true" duration-ms="2730" started-at="2018-08-30T09:03:54Z" finished-at="2018-08-30T09:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.dailyEntryViewEditLink -->
+    </test> <!-- dailyEntryViewEditLink -->
+    <test name="DailyEntryViewProcessFilter" duration-ms="19378" started-at="2018-08-30T03:33:57Z" finished-at="2018-08-30T03:34:16Z">
+      <class name="tests.DailyEntryViewProcessFilter">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.DailyEntryViewProcessFilter@e320068]" name="isSkipped" is-config="true" duration-ms="5633" started-at="2018-08-30T09:03:57Z" finished-at="2018-08-30T09:04:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.DailyEntryViewProcessFilter@e320068]" name="start" is-config="true" duration-ms="3" started-at="2018-08-30T09:04:02Z" finished-at="2018-08-30T09:04:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="DailyEntryViewProcessFilter(java.util.Hashtable)[pri:0, instance:tests.DailyEntryViewProcessFilter@e320068]" name="DailyEntryViewProcessFilter" duration-ms="11085" started-at="2018-08-30T09:04:02Z" data-provider="getData" finished-at="2018-08-30T09:04:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{balannce=, SDH=PurnimaS, Runmode=Y, TL=RagunathA, Date=6, received=13.0, discard=50.0, coded=100.0, Date_RowNo=1.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DailyEntryViewProcessFilter -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.DailyEntryViewProcessFilter@e320068]" name="aftermethod" is-config="true" duration-ms="30" started-at="2018-08-30T09:04:13Z" finished-at="2018-08-30T09:04:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.DailyEntryViewProcessFilter@e320068]" name="quitBrowser" is-config="true" duration-ms="2624" started-at="2018-08-30T09:04:13Z" finished-at="2018-08-30T09:04:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.DailyEntryViewProcessFilter -->
+    </test> <!-- DailyEntryViewProcessFilter -->
+    <test name="DateSelectionVerification" duration-ms="138010" started-at="2018-08-30T03:34:16Z" finished-at="2018-08-30T03:36:34Z">
+      <class name="tests.DateSelectionVerification">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.DateSelectionVerification@4232c52b]" name="isSkipped" is-config="true" duration-ms="5275" started-at="2018-08-30T09:04:16Z" finished-at="2018-08-30T09:04:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.DateSelectionVerification@4232c52b]" name="start" is-config="true" duration-ms="7" started-at="2018-08-30T09:04:21Z" finished-at="2018-08-30T09:04:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="DateSelectionVerification(java.util.Hashtable)[pri:0, instance:tests.DateSelectionVerification@4232c52b]" name="DateSelectionVerification" duration-ms="130151" started-at="2018-08-30T09:04:21Z" data-provider="getData" finished-at="2018-08-30T09:06:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Date=0, discard=50.0, Runmode=Y, coded=100.0, balannce=, Date_RowNo=1.0, received=13.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DateSelectionVerification -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.DateSelectionVerification@4232c52b]" name="aftermethod" is-config="true" duration-ms="31" started-at="2018-08-30T09:06:31Z" finished-at="2018-08-30T09:06:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.DateSelectionVerification@4232c52b]" name="quitBrowser" is-config="true" duration-ms="2545" started-at="2018-08-30T09:06:31Z" finished-at="2018-08-30T09:06:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.DateSelectionVerification -->
+    </test> <!-- DateSelectionVerification -->
+    <test name="VerifiedUpdatedRecordsEdit" duration-ms="91480" started-at="2018-08-30T03:36:34Z" finished-at="2018-08-30T03:38:06Z">
+      <class name="tests.VerifiedUpdatedRecordsEdit">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifiedUpdatedRecordsEdit@528931cf]" name="isSkipped" is-config="true" duration-ms="8264" started-at="2018-08-30T09:06:34Z" finished-at="2018-08-30T09:06:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.VerifiedUpdatedRecordsEdit@528931cf]" name="start" is-config="true" duration-ms="3" started-at="2018-08-30T09:06:42Z" finished-at="2018-08-30T09:06:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="VerifiedUpdatedRecordsEdit(java.util.Hashtable)[pri:0, instance:tests.VerifiedUpdatedRecordsEdit@528931cf]" name="VerifiedUpdatedRecordsEdit" duration-ms="80463" started-at="2018-08-30T09:06:42Z" data-provider="getData" finished-at="2018-08-30T09:08:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, SDH=PurnimaS, OMUser=Welcome PRABAHARAN C K, Runmode=Y, SDHUser=Welcome PURNIMA S, TL=RagunathA, AdminUser=Welcome Vijayalakshmi Hanumantha, received=13.0, Admin=VijayalaH, TLUser=Welcome RAGUNATH A}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifiedUpdatedRecordsEdit -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.VerifiedUpdatedRecordsEdit@528931cf]" name="aftermethod" is-config="true" duration-ms="35" started-at="2018-08-30T09:08:03Z" finished-at="2018-08-30T09:08:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.VerifiedUpdatedRecordsEdit@528931cf]" name="quitBrowser" is-config="true" duration-ms="2713" started-at="2018-08-30T09:08:03Z" finished-at="2018-08-30T09:08:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.VerifiedUpdatedRecordsEdit -->
+    </test> <!-- VerifiedUpdatedRecordsEdit -->
+    <test name="OperationManager" duration-ms="36608" started-at="2018-08-30T03:38:06Z" finished-at="2018-08-30T03:38:42Z">
+      <class name="tests.OperationManager">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.OperationManager@7a765367]" name="isSkipped" is-config="true" duration-ms="5026" started-at="2018-08-30T09:08:06Z" finished-at="2018-08-30T09:08:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.OperationManager@7a765367]" name="start" is-config="true" duration-ms="7" started-at="2018-08-30T09:08:11Z" finished-at="2018-08-30T09:08:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="OMScreen(java.util.Hashtable)[pri:0, instance:tests.OperationManager@7a765367]" name="OMScreen" duration-ms="28875" started-at="2018-08-30T09:08:11Z" data-provider="getData" finished-at="2018-08-30T09:08:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Received=12.0, Date=4, OM=Prabahak, TL=RagunathA, Runmode=Y, SDH=PurnimaS, Admin=VijayalaH}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMScreen -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.OperationManager@7a765367]" name="aftermethod" is-config="true" duration-ms="35" started-at="2018-08-30T09:08:39Z" finished-at="2018-08-30T09:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.OperationManager@7a765367]" name="quitBrowser" is-config="true" duration-ms="2664" started-at="2018-08-30T09:08:39Z" finished-at="2018-08-30T09:08:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.OperationManager -->
+    </test> <!-- OperationManager -->
+    <test name="OMDailyViewEntry" duration-ms="18878" started-at="2018-08-30T03:38:42Z" finished-at="2018-08-30T03:39:01Z">
+      <class name="tests.OMDailyViewEntry">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.OMDailyViewEntry@4b553d26]" name="isSkipped" is-config="true" duration-ms="5348" started-at="2018-08-30T09:08:42Z" finished-at="2018-08-30T09:08:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.OMDailyViewEntry@4b553d26]" name="start" is-config="true" duration-ms="35" started-at="2018-08-30T09:08:47Z" finished-at="2018-08-30T09:08:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="OMScreen(java.util.Hashtable)[pri:0, instance:tests.OMDailyViewEntry@4b553d26]" name="OMScreen" duration-ms="11005" started-at="2018-08-30T09:08:48Z" data-provider="getData" finished-at="2018-08-30T09:08:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Received=12.0, Date=4, OM=Prabahak, TL=RagunathA, Runmode=Y, SDH=PurnimaS, Admin=VijayalaH}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OMScreen -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.OMDailyViewEntry@4b553d26]" name="aftermethod" is-config="true" duration-ms="28" started-at="2018-08-30T09:08:59Z" finished-at="2018-08-30T09:08:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.OMDailyViewEntry@4b553d26]" name="quitBrowser" is-config="true" duration-ms="2460" started-at="2018-08-30T09:08:59Z" finished-at="2018-08-30T09:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.OMDailyViewEntry -->
+    </test> <!-- OMDailyViewEntry -->
+    <test name="OperationManagerPending" duration-ms="63542" started-at="2018-08-30T03:39:01Z" finished-at="2018-08-30T03:40:05Z">
+      <class name="tests.OperationManagerPending">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:tests.OperationManagerPending@3dfc5fb8]" name="initialize" is-config="true" duration-ms="619" started-at="2018-08-30T08:56:45Z" finished-at="2018-08-30T08:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.OperationManagerPending@3dfc5fb8]" name="isSkipped" is-config="true" duration-ms="4831" started-at="2018-08-30T09:09:01Z" finished-at="2018-08-30T09:09:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.OperationManagerPending@3dfc5fb8]" name="start" is-config="true" duration-ms="4" started-at="2018-08-30T09:09:06Z" finished-at="2018-08-30T09:09:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="OperationManagerPending(java.util.Hashtable)[pri:0, instance:tests.OperationManagerPending@3dfc5fb8]" name="OperationManagerPending" duration-ms="56080" started-at="2018-08-30T09:09:06Z" data-provider="getData" finished-at="2018-08-30T09:10:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Received=12.0, Date=4, OM=Prabahak, TL=RagunathA, Runmode=Y, SDH=PurnimaS, Admin=VijayalaH}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OperationManagerPending -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.OperationManagerPending@3dfc5fb8]" name="aftermethod" is-config="true" duration-ms="31" started-at="2018-08-30T09:10:02Z" finished-at="2018-08-30T09:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.OperationManagerPending@3dfc5fb8]" name="quitBrowser" is-config="true" duration-ms="2594" started-at="2018-08-30T09:10:02Z" finished-at="2018-08-30T09:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.OperationManagerPending -->
+    </test> <!-- OperationManagerPending -->
+  </suite> <!-- Suite -->
 </testng-results>

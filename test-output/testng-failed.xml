@@ -1,18 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="OperationManagerPending(failed)">
     <classes>
+      <class name="tests.EditDataPendingStatus">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="aftermethod"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- tests.EditDataPendingStatus -->
       <class name="tests.VerifyReportsTL">
         <methods>
-          <include name="VerifyReportsTL" invocation-numbers="0"/>
           <include name="start"/>
           <include name="quitBrowser"/>
           <include name="aftermethod"/>
-          <include name="initialize"/>
           <include name="isSkipped"/>
         </methods>
       </class> <!-- tests.VerifyReportsTL -->
+      <class name="tests.DailyEntryViewProcessFilter">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="start"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.DailyEntryViewProcessFilter -->
+      <class name="tests.dailyEntryViewEditLink">
+        <methods>
+          <include name="start"/>
+          <include name="aftermethod"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.dailyEntryViewEditLink -->
+      <class name="tests.OMDailyViewEntry">
+        <methods>
+          <include name="start"/>
+          <include name="aftermethod"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.OMDailyViewEntry -->
+      <class name="tests.CurrentDayRecord">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="start"/>
+          <include name="aftermethod"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.CurrentDayRecord -->
+      <class name="tests.VerifiedUpdatedRecordsEdit">
+        <methods>
+          <include name="start"/>
+          <include name="aftermethod"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifiedUpdatedRecordsEdit -->
+      <class name="tests.VerifyRemarkBalnceSatuseField">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="start"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyRemarkBalnceSatuseField -->
+      <class name="tests.TLLogin">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="start"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.TLLogin -->
+      <class name="tests.DateSelectionVerification">
+        <methods>
+          <include name="start"/>
+          <include name="aftermethod"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.DateSelectionVerification -->
+      <class name="tests.RejectRecords">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="start"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.RejectRecords -->
+      <class name="tests.PendingStatusVerified">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="start"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.PendingStatusVerified -->
+      <class name="tests.OperationManagerPending">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="aftermethod"/>
+          <include name="OperationManagerPending" invocation-numbers="0"/>
+          <include name="initialize"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- tests.OperationManagerPending -->
+      <class name="tests.OperationManager">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="start"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- tests.OperationManager -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- OperationManagerPending(failed) -->
+</suite> <!-- Failed suite [Suite] -->
