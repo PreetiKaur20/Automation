@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.AccountConfigBillingType">
+      <class name="tests.VerifyReportsTL">
         <methods>
-          <include name="isSkipped"/>
-          <include name="quitBrowser"/>
-          <include name="AccountConfigScreen" invocation-numbers="0"/>
+          <include name="VerifyReportsTL" invocation-numbers="0"/>
           <include name="start"/>
+          <include name="quitBrowser"/>
           <include name="aftermethod"/>
           <include name="initialize"/>
+          <include name="isSkipped"/>
         </methods>
-      </class> <!-- tests.AccountConfigBillingType -->
+      </class> <!-- tests.VerifyReportsTL -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

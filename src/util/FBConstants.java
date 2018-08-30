@@ -95,7 +95,7 @@ public class FBConstants {
 	
 	//Reports
 	public static final String Reports= "//*[@id='ctl00_TabbedPanels1']/ul/li[3]";
-	public static final String Production_Report="//*[@id='oReportCell']/table/tbody/tr[1]/td/div/table/tbody/tr[2]/td[3]/table/tbody/tr/td/div";
+	public static final String Production_Report="//*[@id='ctl00_TabbedPanels1']/div/div[3]/a[1]";
 	public static final String Show_Report="//*[@id='ctl00_CphBody_btnSubmit']";
 			
 

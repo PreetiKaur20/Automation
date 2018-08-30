@@ -2,43 +2,43 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26721" started-at="2018-08-29T11:06:42Z" finished-at="2018-08-29T11:07:09Z">
+  <suite name="Default suite" duration-ms="14961" started-at="2018-08-29T11:34:34Z" finished-at="2018-08-29T11:34:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26721" started-at="2018-08-29T11:06:42Z" finished-at="2018-08-29T11:07:09Z">
-      <class name="tests.InactiveTLConfig">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:tests.InactiveTLConfig@5b87ed94]" name="initialize" is-config="true" duration-ms="352" started-at="2018-08-29T16:36:42Z" finished-at="2018-08-29T16:36:42Z">
+    <test name="Default test" duration-ms="14961" started-at="2018-08-29T11:34:34Z" finished-at="2018-08-29T11:34:49Z">
+      <class name="tests.VerifyReportsTL">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="initialize" is-config="true" duration-ms="418" started-at="2018-08-29T17:04:34Z" finished-at="2018-08-29T17:04:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.InactiveTLConfig@5b87ed94]" name="isSkipped" is-config="true" duration-ms="8305" started-at="2018-08-29T16:36:42Z" finished-at="2018-08-29T16:36:50Z">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="isSkipped" is-config="true" duration-ms="6258" started-at="2018-08-29T17:04:34Z" finished-at="2018-08-29T17:04:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkipped -->
-        <test-method status="PASS" signature="start()[pri:0, instance:tests.InactiveTLConfig@5b87ed94]" name="start" is-config="true" duration-ms="93" started-at="2018-08-29T16:36:50Z" finished-at="2018-08-29T16:36:50Z">
+        <test-method status="PASS" signature="start()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="start" is-config="true" duration-ms="88" started-at="2018-08-29T17:04:40Z" finished-at="2018-08-29T17:04:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="InactiveTLConfig(java.util.Hashtable)[pri:0, instance:tests.InactiveTLConfig@5b87ed94]" name="InactiveTLConfig" duration-ms="15482" started-at="2018-08-29T16:36:50Z" data-provider="getData" finished-at="2018-08-29T16:37:06Z">
+        <test-method status="PASS" signature="VerifyReportsTL(java.util.Hashtable)[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="VerifyReportsTL" duration-ms="5739" started-at="2018-08-29T17:04:40Z" data-provider="getData" finished-at="2018-08-29T17:04:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Vertical=RCM, ChangeTL=DEVI N, OM=ARJUN B, LoginTL=BalajiR, OM1=Prabahak, Client=NextGen RCM, SDH=BASKARAN A, Runmode=Y, TL=BALAJI R, Project=NextGen RCM, Location=BLR II, Admin=VijayalaH, TL1=RagunathA, SM=MURUGESAN S, Process=BAY MEDICAL - PP}]]>
+                <![CDATA[{balannce=, SDH=PurnimaS, Runmode=Y, TL=RagunathA, Date=6, received=13.0, discard=50.0, coded=100.0, Date_RowNo=1.0}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InactiveTLConfig -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.InactiveTLConfig@5b87ed94]" name="aftermethod" is-config="true" duration-ms="158" started-at="2018-08-29T16:37:06Z" finished-at="2018-08-29T16:37:06Z">
+        </test-method> <!-- VerifyReportsTL -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="aftermethod" is-config="true" duration-ms="198" started-at="2018-08-29T17:04:46Z" finished-at="2018-08-29T17:04:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.InactiveTLConfig@5b87ed94]" name="quitBrowser" is-config="true" duration-ms="2668" started-at="2018-08-29T16:37:06Z" finished-at="2018-08-29T16:37:09Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.VerifyReportsTL@5b87ed94]" name="quitBrowser" is-config="true" duration-ms="2666" started-at="2018-08-29T17:04:46Z" finished-at="2018-08-29T17:04:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- tests.InactiveTLConfig -->
+      </class> <!-- tests.VerifyReportsTL -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
