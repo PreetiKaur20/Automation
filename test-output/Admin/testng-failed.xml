@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Admin]">
+  <test name="VerifyTLConnfigEdit(failed)">
+    <classes>
+      <class name="tests.VerifyTLConfigDisable">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConfigDisable -->
+      <class name="tests.AccountConfigRevenue">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfigRevenue -->
+      <class name="tests.AdminLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminLogin -->
+      <class name="tests.TLConfigurationScreen">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.TLConfigurationScreen -->
+      <class name="tests.AccountConfiguration">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfiguration -->
+      <class name="tests.AdminConfigCancel">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminConfigCancel -->
+      <class name="tests.AccountConfigBillingType">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfigBillingType -->
+      <class name="tests.VerifyTLConfigClearBtn">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConfigClearBtn -->
+      <class name="tests.PleaseSelectAccBilRev">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.PleaseSelectAccBilRev -->
+      <class name="tests.VerifyTLConnfigEdit">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="VerifyTLConnfigEdit" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConnfigEdit -->
+      <class name="tests.AccountConfigAccountName">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.AccountConfigAccountName -->
+      <class name="tests.InactiveTLConfig">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- tests.InactiveTLConfig -->
+    </classes>
+  </test> <!-- VerifyTLConnfigEdit(failed) -->
+  <test name="VerifyTLConfigClearBtn(failed)">
+    <classes>
+      <class name="tests.VerifyTLConfigDisable">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConfigDisable -->
+      <class name="tests.AccountConfigRevenue">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfigRevenue -->
+      <class name="tests.AdminLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminLogin -->
+      <class name="tests.TLConfigurationScreen">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.TLConfigurationScreen -->
+      <class name="tests.AccountConfiguration">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfiguration -->
+      <class name="tests.AdminConfigCancel">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminConfigCancel -->
+      <class name="tests.VerifyTLConfigClearBtn">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+          <include name="VerifyTLConfigClearBtn" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConfigClearBtn -->
+      <class name="tests.AccountConfigBillingType">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfigBillingType -->
+      <class name="tests.PleaseSelectAccBilRev">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.PleaseSelectAccBilRev -->
+      <class name="tests.VerifyTLConnfigEdit">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConnfigEdit -->
+      <class name="tests.AccountConfigAccountName">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.AccountConfigAccountName -->
+      <class name="tests.InactiveTLConfig">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- tests.InactiveTLConfig -->
+    </classes>
+  </test> <!-- VerifyTLConfigClearBtn(failed) -->
+  <test name="AccountConfigAccountName(failed)">
+    <classes>
+      <class name="tests.VerifyTLConfigDisable">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConfigDisable -->
+      <class name="tests.AccountConfigRevenue">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfigRevenue -->
+      <class name="tests.AdminLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminLogin -->
+      <class name="tests.TLConfigurationScreen">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.TLConfigurationScreen -->
+      <class name="tests.AccountConfiguration">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfiguration -->
+      <class name="tests.AdminConfigCancel">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminConfigCancel -->
+      <class name="tests.AccountConfigBillingType">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfigBillingType -->
+      <class name="tests.VerifyTLConfigClearBtn">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConfigClearBtn -->
+      <class name="tests.PleaseSelectAccBilRev">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.PleaseSelectAccBilRev -->
+      <class name="tests.AccountConfigAccountName">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="AccountConfigScreen"/>
+        </methods>
+      </class> <!-- tests.AccountConfigAccountName -->
+      <class name="tests.VerifyTLConnfigEdit">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConnfigEdit -->
+      <class name="tests.InactiveTLConfig">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- tests.InactiveTLConfig -->
+    </classes>
+  </test> <!-- AccountConfigAccountName(failed) -->
+  <test name="AdminConfigCancel(failed)">
+    <classes>
+      <class name="tests.VerifyTLConfigDisable">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConfigDisable -->
+      <class name="tests.AccountConfigRevenue">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfigRevenue -->
+      <class name="tests.AdminLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminLogin -->
+      <class name="tests.TLConfigurationScreen">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.TLConfigurationScreen -->
+      <class name="tests.AccountConfiguration">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfiguration -->
+      <class name="tests.AdminConfigCancel">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="AdminConfigCancel" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.AdminConfigCancel -->
+      <class name="tests.AccountConfigBillingType">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.AccountConfigBillingType -->
+      <class name="tests.VerifyTLConfigClearBtn">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConfigClearBtn -->
+      <class name="tests.PleaseSelectAccBilRev">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.PleaseSelectAccBilRev -->
+      <class name="tests.VerifyTLConnfigEdit">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifyTLConnfigEdit -->
+      <class name="tests.AccountConfigAccountName">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.AccountConfigAccountName -->
+      <class name="tests.InactiveTLConfig">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- tests.InactiveTLConfig -->
+    </classes>
+  </test> <!-- AdminConfigCancel(failed) -->
+</suite> <!-- Failed suite [Admin] -->
