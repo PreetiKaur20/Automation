@@ -23,12 +23,15 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
 import util.FBConstants;
+import util.TestUtil;
 import util.Xls_Reader;
 
+import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -47,10 +50,11 @@ public class TestBase {
 	public static ExtentTest extentTest;
 	public static final String LOG_PATH = FBConstants.REPORTS_PATH + "\\WEB\\";
 	
+	
 
 	@BeforeSuite
 	public void initialize() throws IOException {
-
+		startreport();
 		config = new Properties();
 		FileInputStream fp = new FileInputStream(System.getProperty("user.dir")
 				+ "\\src\\config\\config.properties");
@@ -66,25 +70,44 @@ public class TestBase {
 		datatable = new Xls_Reader(System.getProperty("user.dir")
 				+ "\\src\\data\\Data.xlsx");
 		System.out.println(config.getProperty("browserType"));
+		
 
-		// openBrowser();
+		
 	}
+
+	@AfterTest
+	public void quitBrowser()
+	{
+	
+	driver.quit();
+	extentReports.endTest(extentTest);
+	wait(2);
+	}
+	
+	@AfterSuite
+	public void afterSuite(){
+
+		
+			
+			extentReports.flush();
+			extentReports.close();
+			
+		
+	}
+
+
 
 	public static void openBrowser() {
 		if ((config.getProperty("browserType")).equals("Firefox")) {
 
-			/*
-			 * APPLICATION_LOGS.debug("Starting the driver"); ProfilesIni
-			 * profile = new ProfilesIni(); FirefoxProfile pro =
-			 * profile.getProfile("default"); driver = new FirefoxDriver(pro);
-			 */
+		
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
 			driver.get(FBConstants.LoginURL);
 			
-			// driver.get("http://10.1.2.85/aspire");
+	
 
 		} else {
 			System.setProperty("webdriver.chrome.driver",
@@ -100,13 +123,7 @@ public class TestBase {
 		}
 	}
 	
-	@AfterTest
-	public void quitBrowser()
-	{
-	
-	driver.quit();
-	wait(2);
-	}
+
 	
 	public static void waiton(){
 		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
@@ -143,15 +160,22 @@ public class TestBase {
 		Assert.fail(failureMessage);
 	}
 
-	/*
-	 * public void waitForPageToLoad() { wait(1); JavascriptExecutor js =
-	 * (JavascriptExecutor) driver; String state = (String)
-	 * js.executeScript("return document.readyState");
-	 * 
-	 * while (!state.equals("complete")) { wait(2); state = (String)
-	 * js.executeScript("return document.readyState"); } }
-	 */
+	// BeforeTest
+		public void startreport() {
+			Date d = new Date();
+			String fileName = d.toString().replace(":", "_").replace(" ", "_")
+					+ ".html";
+			String reportPath = LOG_PATH + fileName;
 
+			extentReports = new ExtentReports(reportPath, true,
+					DisplayOrder.NEWEST_FIRST);
+
+			extentReports.loadConfig(new File(System.getProperty("user.dir")
+					+ "\\ReportsConfig.xml"));
+			// optional
+			extentReports.addSystemInfo("Selenium Version", "2.53.0")
+					.addSystemInfo("Environment", "QA");
+		}
 	public void wait(int timeToWaitInSec) {
 		try {
 			Thread.sleep(timeToWaitInSec * 1000);
@@ -190,13 +214,7 @@ public void loadwait(int time,By by){
 	    return foundAlert;
 	}
 	
-/*	@AfterTest
-	public void aftertest() {
-		System.out.println("After Test");
-		driver.quit();
-	}*/
-	
-	
+
 	
 	
 }

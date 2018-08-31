@@ -3,16 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.VerifyReportsTL">
+      <class name="tests.InactiveTLConfig">
         <methods>
-          <include name="VerifyReportsTL" invocation-numbers="0"/>
-          <include name="start"/>
-          <include name="quitBrowser"/>
+          <include name="InactiveTLConfig" invocation-numbers="0"/>
           <include name="aftermethod"/>
-          <include name="initialize"/>
           <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- tests.VerifyReportsTL -->
+      </class> <!-- tests.InactiveTLConfig -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

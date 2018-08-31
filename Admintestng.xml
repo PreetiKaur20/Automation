@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Admin">
+
+     <test name="AdminLogin">
+    <classes>
+      <class name="tests.AdminLogin"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+      <test name="VerifyTLConnfigEdit">
+    <classes>
+      <class name="tests.VerifyTLConnfigEdit"/>
+    </classes>
+  </test> <!-- Test -->
+
+   
+
+       <test name="TLConfigurationScreen">
+    <classes>
+      <class name="tests.TLConfigurationScreen"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="VerifyTLConfigDisable">
+    <classes>
+      <class name="tests.VerifyTLConfigDisable"/>
+    </classes>
+  </test> <!-- Test -->
+     <test name="VerifyTLConfigClearBtn">
+    <classes>
+      <class name="tests.VerifyTLConfigClearBtn"/>
+    </classes>
+  </test> <!-- Test -->
+  
+
+
+     <test name="PleaseSelectAccBilRev">
+    <classes>
+      <class name="tests.PleaseSelectAccBilRev"/>
+    </classes>
+  </test> <!-- Test -->
+   
+
+       <test name="AccountConfigAccountName">
+    <classes>
+      <class name="tests.AccountConfigAccountName"/>
+    </classes>
+  </test> <!-- Test -->
+  
+      <test name="AccountConfigBillingType">
+    <classes>
+      <class name="tests.AccountConfigBillingType"/>
+    </classes>
+  </test> <!-- Test -->
+      <test name="AccountConfigRevenue">
+    <classes>
+      <class name="tests.AccountConfigRevenue"/>
+    </classes>
+  </test> <!-- Test -->
+  
+     <test name="AccountConfiguration">
+    <classes>
+      <class name="tests.AccountConfiguration"/>
+    </classes>
+  </test> <!-- Test -->
+     
+     <test name="AdminConfigCancel">
+    <classes>
+      <class name="tests.AdminConfigCancel"/>
+    </classes>
+  </test> <!-- Test -->
+    
+
+     
+
+           <test name="InactiveTLConfig">
+    <classes>
+      <class name="tests.InactiveTLConfig"/>
+    </classes>
+  </test> <!-- Test -->
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+
+</suite> <!-- Suite -->
