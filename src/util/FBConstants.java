@@ -18,6 +18,12 @@ public class FBConstants {
 	
 	public static final String Received_EditBox2="//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl03_txtReceived']";
 	public static final String Coded_EditBox = "//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtCoded']";
+	public static final String Discard_EditBox = "//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtDiscards']";
+	public static final String Pending_EditBox = "//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtPending']";
+	public static final String Balance = "//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtBalance']";
+	public static final String Backlog = "//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtBacklog']";
+	
+	
 	public static final String Save_Button=	"//*[@value='Save' and @type='submit']";
 	public static final String Status=	"//*[@id='ctl00_CphBody_GrdMonthlyResults']/tbody/tr[1]/td[8]";
 	public static final String From_Date=	"//*[@id='ctl00_CphBody_txtDate']";

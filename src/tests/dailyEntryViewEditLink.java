@@ -51,6 +51,8 @@ public class dailyEntryViewEditLink extends TestBase {
 	
 		driver.get(FBConstants.LoginURL);
 		wait(1);
+		driver.get(FBConstants.LoginURL);
+		wait(1);
 		driver.findElement(By.xpath(FBConstants.Trasction)).click();
 		wait(1);
 		driver.findElement(By.xpath(FBConstants.Trasction)).click(); 

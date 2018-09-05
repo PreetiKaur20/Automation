@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.InactiveTLConfig">
+      <class name="ReportCases.VerifyBacklogsBalance">
         <methods>
-          <include name="InactiveTLConfig" invocation-numbers="0"/>
-          <include name="aftermethod"/>
-          <include name="isSkipped"/>
           <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+          <include name="CurrentDayRecord" invocation-numbers="0"/>
+          <include name="afterSuite"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- tests.InactiveTLConfig -->
+      </class> <!-- ReportCases.VerifyBacklogsBalance -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

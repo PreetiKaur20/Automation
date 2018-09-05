@@ -79,7 +79,7 @@ public class TestBase {
 	public void quitBrowser()
 	{
 	
-	driver.quit();
+	//driver.quit();
 	extentReports.endTest(extentTest);
 	wait(2);
 	}
@@ -103,7 +103,7 @@ public class TestBase {
 		
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);  //120
 			driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
 			driver.get(FBConstants.LoginURL);
 			

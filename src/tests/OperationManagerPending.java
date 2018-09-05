@@ -55,10 +55,11 @@ public class OperationManagerPending extends TestBase {
 
 		extentTest = extentReports.startTest("Logged in as OM User and Able to Select TL and Future date ,Verified Status should be Pending for Approval");
 
-	 wait(1);
+	
 	
 		driver.get(FBConstants.LoginURL);
-		wait(1);
+		driver.get(FBConstants.LoginURL);
+	
 		page.dataEntrySearch();
 	
 		String currentdate = report.seletCurrentDate(-4);
