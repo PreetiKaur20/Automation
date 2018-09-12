@@ -1,17 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="VerifiedUpdatedRecordsEdit(failed)">
     <classes>
-      <class name="ReportCases.VerifyBacklogsBalance">
+      <class name="tests.CurrentDayRecord">
         <methods>
           <include name="quitBrowser"/>
           <include name="isSkipped"/>
-          <include name="CurrentDayRecord" invocation-numbers="0"/>
-          <include name="afterSuite"/>
-          <include name="initialize"/>
         </methods>
-      </class> <!-- ReportCases.VerifyBacklogsBalance -->
+      </class> <!-- tests.CurrentDayRecord -->
+      <class name="tests.TLLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.TLLogin -->
+      <class name="tests.VerifyRemarkBalnceSatuseField">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyRemarkBalnceSatuseField -->
+      <class name="tests.EditDataPendingStatus">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.EditDataPendingStatus -->
+      <class name="tests.VerifyReportsTL">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifyReportsTL -->
+      <class name="tests.VerifiedUpdatedRecordsEdit">
+        <methods>
+          <include name="VerifiedUpdatedRecordsEdit" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="initialize"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifiedUpdatedRecordsEdit -->
+      <class name="tests.RejectRecords">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.RejectRecords -->
+      <class name="tests.PendingStatusVerified">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.PendingStatusVerified -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- VerifiedUpdatedRecordsEdit(failed) -->
+</suite> <!-- Failed suite [Suite] -->

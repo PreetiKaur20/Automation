@@ -56,10 +56,15 @@ public class OperationManager extends TestBase {
 		extentTest = extentReports.startTest("Logged in As OM User and Select Date and TL and Verified Able to Edit data");
 	
      page.changeUser(data.get("TL"), data.get("OM"));
-	wait(2);
+     driver.get(FBConstants.LoginURL);
+	wait(1);
 		extentTest.log(LogStatus.INFO, "Changed User from TL To OM");
-		driver.get(FBConstants.LoginURL);
-		wait(3);
+		if(isElementPresent_xpath(FBConstants.Trasction)){
+			   driver.get(FBConstants.LoginURL);
+				  driver.findElement(By.xpath(FBConstants.Trasction)).click(); }
+		else{
+			driver.findElement(By.xpath(FBConstants.Trasction)).click(); 
+		}
 		page.dataEntrySearch();
 	
 		String currentdate = report.seletCurrentDate(0);

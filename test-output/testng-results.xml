@@ -1,40 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55639" started-at="2018-09-05T10:33:49Z" finished-at="2018-09-05T10:34:45Z">
+  <suite name="Admin" duration-ms="435901" started-at="2018-09-12T04:03:55Z" finished-at="2018-09-12T04:11:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55639" started-at="2018-09-05T10:33:49Z" finished-at="2018-09-05T10:34:45Z">
-      <class name="ReportCases.VerifyCodiningProductionReport">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ReportCases.VerifyCodiningProductionReport@7fac631b]" name="initialize" is-config="true" duration-ms="420" started-at="2018-09-05T16:03:49Z" finished-at="2018-09-05T16:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="isSkipped()[pri:0, instance:ReportCases.VerifyCodiningProductionReport@7fac631b]" name="isSkipped" is-config="true" duration-ms="17565" started-at="2018-09-05T16:03:49Z" finished-at="2018-09-05T16:04:07Z">
+    <test name="AdminLogin" duration-ms="16231" started-at="2018-09-12T04:03:55Z" finished-at="2018-09-12T04:04:11Z">
+      <class name="tests.AdminLogin">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.AdminLogin@7fac631b]" name="isSkipped" is-config="true" duration-ms="6875" started-at="2018-09-12T09:33:55Z" finished-at="2018-09-12T09:34:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkipped -->
-        <test-method status="PASS" signature="CurrentDayRecord(java.util.Hashtable)[pri:0, instance:ReportCases.VerifyCodiningProductionReport@7fac631b]" name="CurrentDayRecord" duration-ms="36041" started-at="2018-09-05T16:04:07Z" data-provider="getData" finished-at="2018-09-05T16:04:43Z">
+        <test-method status="PASS" signature="PleaseSelectAccBilRev(java.util.Hashtable)[pri:0, instance:tests.AdminLogin@7fac631b]" name="PleaseSelectAccBilRev" duration-ms="7719" started-at="2018-09-12T09:34:02Z" data-provider="getData" finished-at="2018-09-12T09:34:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{OM=Prabahak, SDH=PurnimaS, Discard=10.0, OMUser=Welcome PRABAHARAN C K, Runmode=Y, SDHUser=Welcome PURNIMA S, TL=RagunathA, AdminUser=Welcome Vijayalakshmi Hanumantha, received=70, Admin=VijayalaH, coded=14.0, Pending=10.0, TLUser=Welcome RAGUNATH A}]]>
+                <![CDATA[{OM=Prabahak, AccountName=ABS -AR, SDH=PurnimaS, Runmode=Y, UnitRate=5.3, TL=RagunathA, Admin=VijayalaH, RevenueType=No Sharing, BillingType=Production}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CurrentDayRecord -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:ReportCases.VerifyCodiningProductionReport@7fac631b]" name="quitBrowser" is-config="true" duration-ms="2010" started-at="2018-09-05T16:04:43Z" finished-at="2018-09-05T16:04:45Z">
+        </test-method> <!-- PleaseSelectAccBilRev -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.AdminLogin@7fac631b]" name="quitBrowser" is-config="true" duration-ms="1626" started-at="2018-09-12T09:34:10Z" finished-at="2018-09-12T09:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ReportCases.VerifyCodiningProductionReport@7fac631b]" name="afterSuite" is-config="true" duration-ms="165" started-at="2018-09-05T16:04:45Z" finished-at="2018-09-05T16:04:45Z">
+      </class> <!-- tests.AdminLogin -->
+    </test> <!-- AdminLogin -->
+    <test name="VerifyTLConnfigEdit" duration-ms="86994" started-at="2018-09-12T04:04:11Z" finished-at="2018-09-12T04:05:38Z">
+      <class name="tests.VerifyTLConnfigEdit">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifyTLConnfigEdit@9660f4e]" name="isSkipped" is-config="true" duration-ms="8683" started-at="2018-09-12T09:34:11Z" finished-at="2018-09-12T09:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="VerifyTLConnfigEdit(java.util.Hashtable)[pri:0, instance:tests.VerifyTLConnfigEdit@9660f4e]" name="VerifyTLConnfigEdit" duration-ms="76759" started-at="2018-09-12T09:34:20Z" data-provider="getData" finished-at="2018-09-12T09:35:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Vertical=RCM, ChangeTL=DEVI N, OM=ARJUN B, LoginTL=BalajiR, OM1=Prabahak, Client=NextGen RCM, SDH=BASKARAN A, Runmode=Y, TL=BALAJI R, Project=NextGen RCM, Location=BLR II, Admin=VijayalaH, TL1=RagunathA, SM=MURUGESAN S, Process=BAY MEDICAL - PP}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTLConnfigEdit -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.VerifyTLConnfigEdit@9660f4e]" name="quitBrowser" is-config="true" duration-ms="1547" started-at="2018-09-12T09:35:37Z" finished-at="2018-09-12T09:35:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.VerifyTLConnfigEdit -->
+    </test> <!-- VerifyTLConnfigEdit -->
+    <test name="TLConfigurationScreen" duration-ms="20809" started-at="2018-09-12T04:05:38Z" finished-at="2018-09-12T04:05:59Z">
+      <class name="tests.TLConfigurationScreen">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.TLConfigurationScreen@4f063c0a]" name="isSkipped" is-config="true" duration-ms="5931" started-at="2018-09-12T09:35:38Z" finished-at="2018-09-12T09:35:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="TLConfigurationScreen(java.util.Hashtable)[pri:0, instance:tests.TLConfigurationScreen@4f063c0a]" name="TLConfigurationScreen" duration-ms="13282" started-at="2018-09-12T09:35:44Z" data-provider="getData" finished-at="2018-09-12T09:35:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Vertical=RCM, ChangeTL=DEVI N, OM=ARJUN B, LoginTL=BalajiR, OM1=Prabahak, Client=NextGen RCM, SDH=BASKARAN A, Runmode=Y, TL=BALAJI R, Project=NextGen RCM, Location=BLR II, Admin=VijayalaH, TL1=RagunathA, SM=MURUGESAN S, Process=BAY MEDICAL - PP}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TLConfigurationScreen -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.TLConfigurationScreen@4f063c0a]" name="quitBrowser" is-config="true" duration-ms="1595" started-at="2018-09-12T09:35:57Z" finished-at="2018-09-12T09:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.TLConfigurationScreen -->
+    </test> <!-- TLConfigurationScreen -->
+    <test name="VerifyTLConfigDisable" duration-ms="48873" started-at="2018-09-12T04:05:59Z" finished-at="2018-09-12T04:06:48Z">
+      <class name="tests.VerifyTLConfigDisable">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifyTLConfigDisable@26aa12dd]" name="isSkipped" is-config="true" duration-ms="6498" started-at="2018-09-12T09:35:59Z" finished-at="2018-09-12T09:36:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="VerifyTLConfigDisable(java.util.Hashtable)[pri:0, instance:tests.VerifyTLConfigDisable@26aa12dd]" name="VerifyTLConfigDisable" duration-ms="40733" started-at="2018-09-12T09:36:06Z" data-provider="getData" finished-at="2018-09-12T09:36:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Vertical=RCM, ChangeTL=DEVI N, OM=ARJUN B, LoginTL=BalajiR, OM1=Prabahak, Client=NextGen RCM, SDH=BASKARAN A, Runmode=Y, TL=BALAJI R, Project=NextGen RCM, Location=BLR II, Admin=VijayalaH, TL1=RagunathA, SM=MURUGESAN S, Process=BAY MEDICAL - PP}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTLConfigDisable -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.VerifyTLConfigDisable@26aa12dd]" name="quitBrowser" is-config="true" duration-ms="1641" started-at="2018-09-12T09:36:46Z" finished-at="2018-09-12T09:36:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.VerifyTLConfigDisable -->
+    </test> <!-- VerifyTLConfigDisable -->
+    <test name="VerifyTLConfigClearBtn" duration-ms="68535" started-at="2018-09-12T04:06:48Z" finished-at="2018-09-12T04:07:57Z">
+      <class name="tests.VerifyTLConfigClearBtn">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.VerifyTLConfigClearBtn@2d6eabae]" name="isSkipped" is-config="true" duration-ms="10405" started-at="2018-09-12T09:36:48Z" finished-at="2018-09-12T09:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="VerifyTLConfigClearBtn(java.util.Hashtable)[pri:0, instance:tests.VerifyTLConfigClearBtn@2d6eabae]" name="VerifyTLConfigClearBtn" duration-ms="56520" started-at="2018-09-12T09:36:58Z" data-provider="getData" finished-at="2018-09-12T09:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Vertical=RCM, ChangeTL=DEVI N, OM=ARJUN B, LoginTL=BalajiR, OM1=Prabahak, Client=NextGen RCM, SDH=BASKARAN A, Runmode=Y, TL=BALAJI R, Project=NextGen RCM, Location=BLR II, Admin=VijayalaH, TL1=RagunathA, SM=MURUGESAN S, Process=BAY MEDICAL - PP}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTLConfigClearBtn -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.VerifyTLConfigClearBtn@2d6eabae]" name="quitBrowser" is-config="true" duration-ms="1610" started-at="2018-09-12T09:37:55Z" finished-at="2018-09-12T09:37:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.VerifyTLConfigClearBtn -->
+    </test> <!-- VerifyTLConfigClearBtn -->
+    <test name="PleaseSelectAccBilRev" duration-ms="18768" started-at="2018-09-12T04:07:57Z" finished-at="2018-09-12T04:08:15Z">
+      <class name="tests.PleaseSelectAccBilRev">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.PleaseSelectAccBilRev@1f7030a6]" name="isSkipped" is-config="true" duration-ms="8513" started-at="2018-09-12T09:37:57Z" finished-at="2018-09-12T09:38:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="PleaseSelectAccBilRev(java.util.Hashtable)[pri:0, instance:tests.PleaseSelectAccBilRev@1f7030a6]" name="PleaseSelectAccBilRev" duration-ms="8602" started-at="2018-09-12T09:38:05Z" data-provider="getData" finished-at="2018-09-12T09:38:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, AccountName=ABS -AR, SDH=PurnimaS, Runmode=Y, UnitRate=5.3, TL=RagunathA, Admin=VijayalaH, RevenueType=No Sharing, BillingType=Production}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PleaseSelectAccBilRev -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.PleaseSelectAccBilRev@1f7030a6]" name="quitBrowser" is-config="true" duration-ms="1651" started-at="2018-09-12T09:38:14Z" finished-at="2018-09-12T09:38:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.PleaseSelectAccBilRev -->
+    </test> <!-- PleaseSelectAccBilRev -->
+    <test name="AccountConfigAccountName" duration-ms="28117" started-at="2018-09-12T04:08:15Z" finished-at="2018-09-12T04:08:43Z">
+      <class name="tests.AccountConfigAccountName">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.AccountConfigAccountName@1e965684]" name="isSkipped" is-config="true" duration-ms="9031" started-at="2018-09-12T09:38:15Z" finished-at="2018-09-12T09:38:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="AccountConfigScreen(java.util.Hashtable)[pri:0, instance:tests.AccountConfigAccountName@1e965684]" name="AccountConfigScreen" duration-ms="17491" started-at="2018-09-12T09:38:24Z" data-provider="getData" finished-at="2018-09-12T09:38:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, AccountName=ABS -AR, SDH=PurnimaS, Runmode=Y, UnitRate=5.3, TL=RagunathA, Admin=VijayalaH, RevenueType=No Sharing, BillingType=Production}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountConfigScreen -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.AccountConfigAccountName@1e965684]" name="quitBrowser" is-config="true" duration-ms="1594" started-at="2018-09-12T09:38:42Z" finished-at="2018-09-12T09:38:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.AccountConfigAccountName -->
+    </test> <!-- AccountConfigAccountName -->
+    <test name="AccountConfigBillingType" duration-ms="29820" started-at="2018-09-12T04:08:43Z" finished-at="2018-09-12T04:09:13Z">
+      <class name="tests.AccountConfigBillingType">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.AccountConfigBillingType@3712b94]" name="isSkipped" is-config="true" duration-ms="5452" started-at="2018-09-12T09:38:43Z" finished-at="2018-09-12T09:38:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="AccountConfigScreen(java.util.Hashtable)[pri:0, instance:tests.AccountConfigBillingType@3712b94]" name="AccountConfigScreen" duration-ms="22039" started-at="2018-09-12T09:38:49Z" data-provider="getData" finished-at="2018-09-12T09:39:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, AccountName=ABS -AR, SDH=PurnimaS, Runmode=Y, UnitRate=5.3, TL=RagunathA, Admin=VijayalaH, RevenueType=No Sharing, BillingType=Production}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountConfigScreen -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.AccountConfigBillingType@3712b94]" name="quitBrowser" is-config="true" duration-ms="2328" started-at="2018-09-12T09:39:11Z" finished-at="2018-09-12T09:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.AccountConfigBillingType -->
+    </test> <!-- AccountConfigBillingType -->
+    <test name="AccountConfigRevenue" duration-ms="40937" started-at="2018-09-12T04:09:13Z" finished-at="2018-09-12T04:09:54Z">
+      <class name="tests.AccountConfigRevenue">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.AccountConfigRevenue@536aaa8d]" name="isSkipped" is-config="true" duration-ms="10373" started-at="2018-09-12T09:39:13Z" finished-at="2018-09-12T09:39:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="AccountConfigScreen(java.util.Hashtable)[pri:0, instance:tests.AccountConfigRevenue@536aaa8d]" name="AccountConfigScreen" duration-ms="28979" started-at="2018-09-12T09:39:24Z" data-provider="getData" finished-at="2018-09-12T09:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, AccountName=ABS -AR, SDH=PurnimaS, Runmode=Y, UnitRate=5.3, TL=RagunathA, Admin=VijayalaH, RevenueType=No Sharing, BillingType=Production}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountConfigScreen -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.AccountConfigRevenue@536aaa8d]" name="quitBrowser" is-config="true" duration-ms="1585" started-at="2018-09-12T09:39:53Z" finished-at="2018-09-12T09:39:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.AccountConfigRevenue -->
+    </test> <!-- AccountConfigRevenue -->
+    <test name="AccountConfiguration" duration-ms="27710" started-at="2018-09-12T04:09:54Z" finished-at="2018-09-12T04:10:22Z">
+      <class name="tests.AccountConfiguration">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.AccountConfiguration@57e1b0c]" name="isSkipped" is-config="true" duration-ms="8490" started-at="2018-09-12T09:39:54Z" finished-at="2018-09-12T09:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="AccountConfiguration(java.util.Hashtable)[pri:0, instance:tests.AccountConfiguration@57e1b0c]" name="AccountConfiguration" duration-ms="17516" started-at="2018-09-12T09:40:03Z" data-provider="getData" finished-at="2018-09-12T09:40:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, AccountName=ABS -AR, SDH=PurnimaS, Runmode=Y, UnitRate=5.3, TL=RagunathA, Admin=VijayalaH, RevenueType=No Sharing, BillingType=Production}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountConfiguration -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.AccountConfiguration@57e1b0c]" name="quitBrowser" is-config="true" duration-ms="1703" started-at="2018-09-12T09:40:20Z" finished-at="2018-09-12T09:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.AccountConfiguration -->
+    </test> <!-- AccountConfiguration -->
+    <test name="AdminConfigCancel" duration-ms="26101" started-at="2018-09-12T04:10:22Z" finished-at="2018-09-12T04:10:48Z">
+      <class name="tests.AdminConfigCancel">
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.AdminConfigCancel@5faeada1]" name="isSkipped" is-config="true" duration-ms="6379" started-at="2018-09-12T09:40:22Z" finished-at="2018-09-12T09:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="AdminConfigCancel(java.util.Hashtable)[pri:0, instance:tests.AdminConfigCancel@5faeada1]" name="AdminConfigCancel" duration-ms="18111" started-at="2018-09-12T09:40:28Z" data-provider="getData" finished-at="2018-09-12T09:40:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OM=Prabahak, AccountName=ABS -AR, SDH=PurnimaS, Runmode=Y, UnitRate=5.3, TL=RagunathA, Admin=VijayalaH, RevenueType=No Sharing, BillingType=Production}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdminConfigCancel -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.AdminConfigCancel@5faeada1]" name="quitBrowser" is-config="true" duration-ms="1610" started-at="2018-09-12T09:40:47Z" finished-at="2018-09-12T09:40:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.AdminConfigCancel -->
+    </test> <!-- AdminConfigCancel -->
+    <test name="InactiveTLConfig" duration-ms="22678" started-at="2018-09-12T04:10:48Z" finished-at="2018-09-12T04:11:11Z">
+      <class name="tests.InactiveTLConfig">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:tests.InactiveTLConfig@7a765367]" name="initialize" is-config="true" duration-ms="437" started-at="2018-09-12T09:33:54Z" finished-at="2018-09-12T09:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="isSkipped()[pri:0, instance:tests.InactiveTLConfig@7a765367]" name="isSkipped" is-config="true" duration-ms="5692" started-at="2018-09-12T09:40:48Z" finished-at="2018-09-12T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkipped -->
+        <test-method status="PASS" signature="InactiveTLConfig(java.util.Hashtable)[pri:0, instance:tests.InactiveTLConfig@7a765367]" name="InactiveTLConfig" duration-ms="15195" started-at="2018-09-12T09:40:54Z" data-provider="getData" finished-at="2018-09-12T09:41:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Vertical=RCM, ChangeTL=DEVI N, OM=ARJUN B, LoginTL=BalajiR, OM1=Prabahak, Client=NextGen RCM, SDH=BASKARAN A, Runmode=Y, TL=BALAJI R, Project=NextGen RCM, Location=BLR II, Admin=VijayalaH, TL1=RagunathA, SM=MURUGESAN S, Process=BAY MEDICAL - PP}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InactiveTLConfig -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:tests.InactiveTLConfig@7a765367]" name="aftermethod" is-config="true" duration-ms="196" started-at="2018-09-12T09:41:09Z" finished-at="2018-09-12T09:41:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.InactiveTLConfig@7a765367]" name="quitBrowser" is-config="true" duration-ms="1593" started-at="2018-09-12T09:41:09Z" finished-at="2018-09-12T09:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:tests.InactiveTLConfig@7a765367]" name="afterSuite" is-config="true" duration-ms="4" started-at="2018-09-12T09:41:11Z" finished-at="2018-09-12T09:41:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- ReportCases.VerifyCodiningProductionReport -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.InactiveTLConfig -->
+    </test> <!-- InactiveTLConfig -->
+  </suite> <!-- Admin -->
 </testng-results>

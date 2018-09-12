@@ -49,7 +49,7 @@ public class VerifyRemarkBalnceSatuseField extends TestBase {
 		extentTest = extentReports
 				.startTest("To verify Status and remarks fields will be come after Balance in View Daily entry");
 
-		report.takeScreenShot();
+	
 		extentTest.log(LogStatus.INFO, "Navigating to Daily View Entry Page and Verified Status ,Balance and Remark");
 		wait(2);
 		driver.get(FBConstants.Data_View_Entry);

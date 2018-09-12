@@ -56,9 +56,12 @@ public class OperationManagerPending extends TestBase {
 		extentTest = extentReports.startTest("Logged in as OM User and Able to Select TL and Future date ,Verified Status should be Pending for Approval");
 
 	
-	
-		driver.get(FBConstants.LoginURL);
-		driver.get(FBConstants.LoginURL);
+		if(isElementPresent_xpath(FBConstants.Trasction)){
+			   driver.get(FBConstants.LoginURL);
+				  driver.findElement(By.xpath(FBConstants.Trasction)).click(); }
+		else{
+			driver.findElement(By.xpath(FBConstants.Trasction)).click(); 
+		}
 	
 		page.dataEntrySearch();
 	
@@ -121,7 +124,7 @@ page.setDate(dateTo, currentdate);
  TL=		driver.findElement(By.xpath(FBConstants.TLDrop));
  sc = new Select(TL);
 sc.selectByIndex(1);
-report.takeScreenShot();
+
 extentTest.log(LogStatus.INFO, "Enter Datae from , Date To and TL");
 
 page.clickSearchButton();

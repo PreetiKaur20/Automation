@@ -49,9 +49,8 @@ public class DailyEntryViewProcessFilter extends TestBase {
 	public void DailyEntryViewProcessFilter(Hashtable<String, String> data) throws IOException {
 		extentTest = extentReports
 				.startTest("Searching Records with Process and Client");
-		driver.get(FBConstants.LoginURL);
-		wait(2);
-		try{
+	
+		if(isElementPresent_xpath(FBConstants.Trasction)){
 		driver.findElement(By.xpath(FBConstants.Trasction)).click();
 		extentTest.log(LogStatus.INFO, "clicked on Transaction");
 		report.takeScreenShot();
@@ -68,13 +67,14 @@ WebElement client=		driver.findElement(By.xpath(FBConstants.ClientDrop));
 extentTest.log(LogStatus.INFO, "Selecting  Client");
 Select sc = new Select(client);
 sc.selectByIndex(1);
-report.takeScreenShot();
+
 
 WebElement process=		driver.findElement(By.xpath(FBConstants.Processdrop));
 extentTest.log(LogStatus.INFO, "Selecting Process and Search");
 sc = new Select(process);
 sc.selectByIndex(1);
-page.clickSearchButton();}catch(Exception e){}
+page.clickSearchButton();
+		}
 
 
 

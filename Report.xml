@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reporting">
+
+    <test name="TLLogin">
+    <classes>
+      <class name="tests.TLLogin"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+      <test name="EditData">
+    <classes>
+      <class name="ReportCases.EditData"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+     <test name="VerifyBacklogsBalance">
+    <classes>
+      <class name="ReportCases.VerifyBacklogsBalance"/>
+    </classes>
+  </test> <!-- Test -->
+
+  
+      <test name="VerifyCalculation">
+    <classes>
+      <class name="ReportCases.VerifyCalculation"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+    <test name="VerifyCodiningProductionReport">
+    <classes>
+      <class name="ReportCases.VerifyCodiningProductionReport"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+
+</suite> <!-- Suite -->

@@ -53,14 +53,13 @@ public class CurrentDayRecord extends TestBase {
 
 		extentTest = extentReports.startTest("Verified approved status for Current day");
 		
-		//Change User to TL
-		WebElement username = driver.findElement(By.xpath(FBConstants.Username));
-
-		
-		driver.get(FBConstants.LoginURL);
-		wait(2);
 	
-		  driver.findElement(By.xpath(FBConstants.Trasction)).click(); 
+if(isElementPresent_xpath(FBConstants.Trasction)){
+	   driver.get(FBConstants.LoginURL);
+		  driver.findElement(By.xpath(FBConstants.Trasction)).click(); }
+else{
+	driver.findElement(By.xpath(FBConstants.Trasction)).click(); 
+}
 		page.dataEntrySearch();
 	//	int date = Integer.parseInt(data.get("Date"));
 		String currentdate = report.seletCurrentDate(0);

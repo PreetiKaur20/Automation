@@ -43,14 +43,12 @@ public class EditDataPendingStatus extends TestBase {
 		}
 	}
 
-	
-
 	@Test(dataProvider = "getData", priority = '1')
-	public void EditDataPendingStatus(Hashtable<String, String> data) throws IOException {
+	public void EditDataPendingStatus(Hashtable<String, String> data)
+			throws IOException {
 		extentTest = extentReports
 				.startTest("Updating Data in Daily Entry Page BY TL  ,Approved by SDH and verified status changed to Approved from Pending from Approval");
-		driver.get(FBConstants.LoginURL);
-		wait(2);
+		
 		page.dataEntrySearch();
 		WebElement ele = driver.findElement(By.xpath(FBConstants.Calendar));
 		page.setDate(ele, cureentprevfour);
@@ -58,57 +56,58 @@ public class EditDataPendingStatus extends TestBase {
 		page.clickSearchButton();
 		report.takeScreenShot();
 		extentTest.log(LogStatus.INFO, "Clicked on Search Button");
-		
 
-		if (!isElementPresent_xpath("//*[@id='ctl00_CphBody_lblPendingMessage']")){
+		if (!isElementPresent_xpath("//*[@id='ctl00_CphBody_lblPendingMessage']")) {
 			report.takeScreenShot();
-			extentTest.log(LogStatus.INFO, "Verified Able to Edit Data and Saved ");
+			extentTest.log(LogStatus.INFO,
+					"Verified Able to Edit Data and Saved ");
 			loadwait(2000, By.id("loading"));
-		page.receiveddata(data.get("received"));
+			page.receiveddata(data.get("received"));
 
-	
-		
-		page.clickSaveButton();
-		
-	wait(2);
-		waitAlert(8000);
-		try {
-			if(isAlertPresent()){
-			driver.switchTo().alert().accept();}
-		} catch (Exception e) {
-		}
-		report.takeScreenShot();
-		extentTest.log(LogStatus.INFO, "Clicked on saved Button and alert");
-	
-String actualstatus=		dataViewEntryStatus();
-		Assert.assertTrue(actualstatus.equals("Pending for approval"),
-				"Status is Approved Status not in Pending Status");
-		report.takeScreenShot();
-		extentTest.log(LogStatus.INFO, "Verified Status Should be Pending for approval");
-	//Navigate to SDH and approve 
-		page.changeUser(data.get("TL"),data.get("SDH"));
-	
-		driver.get(FBConstants.LoginURL);
-		//Approved Records
-		page.SDHApproval();
-		report.takeScreenShot();
-		extentTest.log(LogStatus.INFO, "Login TO Application AS SDH and Approved Records");
-		wait(1);
-		page.changeUser(data.get("SDH"),data.get("TL"));
-		wait(2);
-		driver.get(FBConstants.LoginURL);
-		wait(2);
-		actualstatus= dataViewEntryStatus();
-		Assert.assertTrue(actualstatus.equals("Approved"),
-				"Status is in Pending not Approved");
-		report.takeScreenShot();
-		extentTest.log(LogStatus.INFO, "Login TO Application AS TL and Verified Approved Status");
+			page.clickSaveButton();
+
+			wait(2);
+			waitAlert(8000);
+			try {
+				if (isAlertPresent()) {
+					driver.switchTo().alert().accept();
+				}
+			} catch (Exception e) {
+			}
+			report.takeScreenShot();
+			extentTest.log(LogStatus.INFO, "Clicked on saved Button and alert");
+
+			String actualstatus = dataViewEntryStatus();
+			Assert.assertTrue(actualstatus.equals("Pending for approval"),
+					"Status is Approved Status not in Pending Status");
+			report.takeScreenShot();
+			extentTest.log(LogStatus.INFO,
+					"Verified Status Should be Pending for approval");
+			// Navigate to SDH and approve
+			page.changeUser(data.get("TL"), data.get("SDH"));
+
+			driver.get(FBConstants.LoginURL);
+			// Approved Records
+			page.SDHApproval();
+			report.takeScreenShot();
+			extentTest.log(LogStatus.INFO,
+					"Login TO Application AS SDH and Approved Records");
+			wait(1);
+			page.changeUser(data.get("SDH"), data.get("TL"));
+			wait(2);
+			driver.get(FBConstants.LoginURL);
+			wait(2);
+			actualstatus = dataViewEntryStatus();
+			Assert.assertTrue(actualstatus.equals("Approved"),
+					"Status is in Pending not Approved");
+			
+			extentTest.log(LogStatus.INFO,
+					"Login TO Application AS TL and Verified Approved Status");
 		}
 	}
-	
 
-	public String dataViewEntryStatus()
-	{driver.get(FBConstants.Data_View_Entry);
+	public String dataViewEntryStatus() {
+		driver.get(FBConstants.Data_View_Entry);
 		wait(1);
 
 		WebElement datefrom = driver.findElement(By
@@ -121,11 +120,9 @@ String actualstatus=		dataViewEntryStatus();
 		String actualstatus = driver.findElement(By.xpath(FBConstants.Status))
 				.getText();
 		return actualstatus;
-	
+
 	}
 
-
-	
 	@DataProvider
 	public Object[][] getData() {
 		return DataUtil.getData(datatable, "EditDataPendingStatus");

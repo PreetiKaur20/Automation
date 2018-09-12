@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteA]">
+  <test name="VerifiedUpdatedRecordsEdit(failed)">
+    <classes>
+      <class name="tests.DateSelectionVerification">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.DateSelectionVerification -->
+      <class name="tests.DailyEntryViewProcessFilter">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.DailyEntryViewProcessFilter -->
+      <class name="tests.VerifiedUpdatedRecordsEdit">
+        <methods>
+          <include name="VerifiedUpdatedRecordsEdit" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.VerifiedUpdatedRecordsEdit -->
+      <class name="tests.OperationManagerPending">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- tests.OperationManagerPending -->
+      <class name="tests.TLLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.TLLogin -->
+      <class name="tests.OperationManager">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.OperationManager -->
+      <class name="tests.OMDailyViewEntry">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- tests.OMDailyViewEntry -->
+    </classes>
+  </test> <!-- VerifiedUpdatedRecordsEdit(failed) -->
+</suite> <!-- Failed suite [SuiteA] -->

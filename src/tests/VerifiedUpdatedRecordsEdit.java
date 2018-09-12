@@ -57,16 +57,16 @@ public class VerifiedUpdatedRecordsEdit extends TestBase {
 		driver.get(FBConstants.LoginURL);
 		wait(2);
 		SearchRecord();
-		loadwait(2000, By.id("loading"));
+		loadwait(3000, By.id("loading"));
 		// Enter dta in Recieved EditBox
 		wait(3);
-		report.takeScreenShot();
+		
 		extentTest.log(LogStatus.INFO, "Enter data and Saved Records");
 		page.receiveddata(data.get("received"));
 	    wait(3);
 		page.clickSaveButton();
 		extentTest.log(LogStatus.INFO, "Clicked on Saved Button");
-		wait(2);
+		
 		
 		waitAlert(8000);
 		try {
@@ -82,18 +82,18 @@ public class VerifiedUpdatedRecordsEdit extends TestBase {
 		}catch(Exception e){
 			
 		}
-		report.takeScreenShot();
+		
 	}
 
 
 
 	public void SearchRecord() {
-		wait(1);
+		
 		driver.get(FBConstants.LoginURL);
-		wait(2);
+		
 		ValidateDataEntryPage page = new ValidateDataEntryPage();
-		  wait(1);
-			report.takeScreenShot();
+	
+		
 			extentTest.log(LogStatus.INFO, "Clicked on Transaction");
 		  driver.findElement(By.xpath(FBConstants.Trasction)).click(); 
 		  
@@ -108,7 +108,7 @@ public class VerifiedUpdatedRecordsEdit extends TestBase {
 		report.takeScreenShot();
 		wait(3);
 		page.clickSearchButton();
-		report.takeScreenShot();
+		
 		extentTest.log(LogStatus.INFO, "Entering Date and Clicked on Search Button");
 	}
 

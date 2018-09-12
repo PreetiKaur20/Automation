@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Reporting]">
+  <test name="EditData(failed)">
+    <classes>
+      <class name="tests.TLLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.TLLogin -->
+      <class name="ReportCases.BacklogChangedBalanceNextDay">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- ReportCases.BacklogChangedBalanceNextDay -->
+      <class name="ReportCases.VerifyCalculation">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.VerifyCalculation -->
+      <class name="ReportCases.VerifyCodiningProductionReport">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.VerifyCodiningProductionReport -->
+      <class name="ReportCases.EditData">
+        <methods>
+          <include name="CurrentDayRecord" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.EditData -->
+    </classes>
+  </test> <!-- EditData(failed) -->
+  <test name="BacklogChangedBalanceNextDay(failed)">
+    <classes>
+      <class name="tests.TLLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.TLLogin -->
+      <class name="ReportCases.BacklogChangedBalanceNextDay">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="VerifyBackLogBalance" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- ReportCases.BacklogChangedBalanceNextDay -->
+      <class name="ReportCases.VerifyCalculation">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.VerifyCalculation -->
+      <class name="ReportCases.VerifyCodiningProductionReport">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.VerifyCodiningProductionReport -->
+      <class name="ReportCases.EditData">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.EditData -->
+    </classes>
+  </test> <!-- BacklogChangedBalanceNextDay(failed) -->
+  <test name="VerifyCalculation(failed)">
+    <classes>
+      <class name="tests.TLLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.TLLogin -->
+      <class name="ReportCases.BacklogChangedBalanceNextDay">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- ReportCases.BacklogChangedBalanceNextDay -->
+      <class name="ReportCases.VerifyCalculation">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="CurrentDayRecord"/>
+        </methods>
+      </class> <!-- ReportCases.VerifyCalculation -->
+      <class name="ReportCases.VerifyCodiningProductionReport">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.VerifyCodiningProductionReport -->
+      <class name="ReportCases.EditData">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.EditData -->
+    </classes>
+  </test> <!-- VerifyCalculation(failed) -->
+  <test name="VerifyCodiningProductionReport(failed)">
+    <classes>
+      <class name="tests.TLLogin">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- tests.TLLogin -->
+      <class name="ReportCases.BacklogChangedBalanceNextDay">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- ReportCases.BacklogChangedBalanceNextDay -->
+      <class name="ReportCases.VerifyCodiningProductionReport">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="CurrentDayRecord" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="initialize"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.VerifyCodiningProductionReport -->
+      <class name="ReportCases.VerifyCalculation">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.VerifyCalculation -->
+      <class name="ReportCases.EditData">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class> <!-- ReportCases.EditData -->
+    </classes>
+  </test> <!-- VerifyCodiningProductionReport(failed) -->
+</suite> <!-- Failed suite [Reporting] -->

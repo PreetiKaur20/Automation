@@ -4,7 +4,14 @@ package util;
 
 
 public class FBConstants {
+	
+	
+	
+	public static final String PrdProcess="Rai-Denial Review";
 	public static final String Browser = "Firefox";
+	public static final String ProcessRep = "RAI-Denial Review";
+	public static final String ProjectRep = "Charsleston - PATH";
+	public static final String ClientRep = "McKesson PD";
 	public static final String TLUser = "Welcome RAGUNATH A";
 	public static final String AdminUser = "Welcome Vijayalakshmi Hanumantha";
 	public static final String OMUser = "Welcome PRABAHARAN C K";
@@ -22,6 +29,7 @@ public class FBConstants {
 	public static final String Pending_EditBox = "//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtPending']";
 	public static final String Balance = "//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtBalance']";
 	public static final String Backlog = "//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtBacklog']";
+	public static final String CodedKEY ="//*[@id='ctl00_CphBody_GrdDailyUpdates_ctl02_txtCodedKeyed']";
 	
 	
 	public static final String Save_Button=	"//*[@value='Save' and @type='submit']";

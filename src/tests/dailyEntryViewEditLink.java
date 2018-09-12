@@ -43,43 +43,32 @@ public class dailyEntryViewEditLink extends TestBase {
 		}
 	}
 
-
 	@Test(dataProvider = "getData", priority = '1')
-	public void dailyEntryViewEditLink(Hashtable<String, String> data) throws IOException {
+	public void dailyEntryViewEditLink(Hashtable<String, String> data)
+			throws IOException {
 		extentTest = extentReports
 				.startTest("Verified Edit Link on Daily View Entry Page");
-	
-		driver.get(FBConstants.LoginURL);
-		wait(1);
-		driver.get(FBConstants.LoginURL);
-		wait(1);
+
+		if(isElementPresent_xpath(FBConstants.Trasction)){
 		driver.findElement(By.xpath(FBConstants.Trasction)).click();
-		wait(1);
-		driver.findElement(By.xpath(FBConstants.Trasction)).click(); 
 		driver.get(FBConstants.Data_View_Entry);
-		extentTest.log(LogStatus.INFO, "Clicked on Transaction and Navigating to Daily View Entry Page and Search Records ");
-		report.takeScreenShot();
-	
+		extentTest
+				.log(LogStatus.INFO,
+						"Clicked on Transaction and Navigating to Daily View Entry Page and Search Records ");
 		
 
+		driver.findElement(By.xpath(FBConstants.EditLink)).click();
+		extentTest.log(LogStatus.INFO, "Click on Edit Link");
+		loadwait(9000, By.id("loading"));
+		wait(2);
 
-driver.findElement(By.xpath(FBConstants.EditLink)).click();
-extentTest.log(LogStatus.INFO, "Click on Edit Link");
-loadwait(9000, By.id("loading"));
-wait(2);
+		page.clickSaveButton();
 
-page.clickSaveButton();
+		extentTest.log(LogStatus.INFO,
+				"Clicked on Saved Button and able to Edit Record");
 
-extentTest.log(LogStatus.INFO, "Clicked on Saved Button and able to Edit Record");
-
-
-		}
-
-	
-
-
-
-
+	}
+	}
 
 	@DataProvider
 	public Object[][] getData() {

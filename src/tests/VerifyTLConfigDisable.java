@@ -126,7 +126,8 @@ extentTest
 		.log(LogStatus.INFO, "Click on Disable Button ");
 try{
 WebDriverWait wait = new WebDriverWait(driver, 5000);
-wait.until((ExpectedConditions.alertIsPresent()));
+
+wait.until(ExpectedConditions.alertIsPresent());
 Alert al = driver.switchTo().alert();
 System.out.println(al.getText());
 wait(2);

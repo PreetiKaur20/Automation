@@ -50,9 +50,12 @@ public class VerifyReportsTL extends TestBase {
 	public void VerifyReportsTL(Hashtable<String, String> data) throws IOException {
 		extentTest = extentReports
 				.startTest("Logged in as TL, Navigate to Production Report, verified Show Report button is Enable and Verified Reports");
+		wait(1);
 		driver.get(FBConstants.LoginURL);
 		extentTest.log(LogStatus.INFO, "Navigate to Applicatiion");
-		report.takeScreenShot();
+		driver.get(FBConstants.LoginURL);
+		wait(2);
+	
 		if(isElementPresent_xpath(FBConstants.Reports)){
 			System.out.println("Clicked on Report");
 		driver.findElement(By.xpath(FBConstants.Reports)).click();
@@ -60,12 +63,12 @@ public class VerifyReportsTL extends TestBase {
 		report.takeScreenShot();
 		wait(1);
 		driver.findElement(By.xpath(FBConstants.Production_Report)).click();
-		 
+		report.takeScreenShot();
 		}
 			
 		
 	
-String codedvalue;
+
 
 if(isElementPresent_xpath(FBConstants.Show_Report)){
 	WebElement showReport=		driver.findElement(By.xpath(FBConstants.Show_Report));
@@ -77,51 +80,10 @@ if(isElementPresent_xpath(FBConstants.Show_Report)){
 	
 }
 
-wait(1);
-
-
-driver.switchTo().frame("ReportFramectl00_CphBody_RpvProduction");
-driver.switchTo().frame("report");
-
-
-if(!isElementPresent_xpath("//*[@id='oReportCell']/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[2]/td[3]/table/tbody/tr[2]/td[3]")){
-	System.out.println("not found");
-}
-else{
-	System.out.println("found");
-}
-
-String part1="//*[@id='oReportCell']/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[2]/td[3]/table/tbody/tr[2]/td[";
-String part2="]/div";
-int i=3;
-while(isElementPresent_xpath(part1+i+part2)){
-String date=	driver.findElement(By.xpath(part1+i+part2)).getText();
-if(date.equals(cureentprevfour)){
-	System.out.println("Coloum number:"+i);
-	codedvalue=driver.findElement(By.xpath(part1+i+part2)).getText();
-}
-System.out.println(date);
-i++;
-}
 
 
 
 
-
-
-
-
-wait(1);
-
-
-/*
-int i=3;
-while(isElementPresent_xpath(part1+i+part2)){
-String date=	driver.findElement(By.xpath(part1+i+part2)).getText();
-System.out.println(date);
-i++;
-}
-	*/	
 
 
 

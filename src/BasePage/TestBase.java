@@ -79,9 +79,10 @@ public class TestBase {
 	public void quitBrowser()
 	{
 	
-	//driver.quit();
 	extentReports.endTest(extentTest);
-	wait(2);
+
+	driver.quit();
+	wait(1);
 	}
 	
 	@AfterSuite
@@ -96,16 +97,17 @@ public class TestBase {
 	}
 
 
-
-	public static void openBrowser() {
+//changed to Non Static
+	public  void openBrowser() {
 		if ((config.getProperty("browserType")).equals("Firefox")) {
 
 		
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);  //120
-			driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(160, TimeUnit.SECONDS);
 			driver.get(FBConstants.LoginURL);
+	
 			
 	
 
@@ -124,7 +126,9 @@ public class TestBase {
 	}
 	
 
-	
+	public void deletecookies(){
+		driver.manage().deleteAllCookies();
+	}
 	public static void waiton(){
 		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 	}

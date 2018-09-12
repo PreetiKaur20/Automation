@@ -57,7 +57,7 @@ public class OMDailyViewEntry extends TestBase {
 
 		extentTest = extentReports.startTest("Navigate to Date View Entry page as Operation Manager and Verified Approved status");
 	
-		driver.get(FBConstants.LoginURL);
+	
   driver.findElement(By.xpath(FBConstants.Trasction)).click();
 
 // click on Data Entry
